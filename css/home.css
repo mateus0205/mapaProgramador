@@ -1,86 +1,55 @@
-/* Reset básico para o body */
+/* Reset básico */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 /* Barra superior */
 .barra-total {
-  background: linear-gradient(to right, #0010f7, #0022a8);
-  padding: 20px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Cabeçalho - container do título e menu */
-.cabecalho {
+  background: linear-gradient(135deg, #001F3F, #0074E4);
+  padding: 24px 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
   box-sizing: border-box;
 }
 
-/* Título principal */
-h1 {
+/* Título à esquerda */
+.titulo {
   color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
   margin: 0;
-  font-size: 28px;
-  font-weight: 600;
+  white-space: nowrap;
 }
 
-/* Lista de navegação */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Container dos botões à direita */
+.menu-container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-ul li {
-  color: #ffffff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-ul li:hover {
-  color: #aee3ff;
-}
-
-/* Botão estilizado */
+/* Botões coloridos */
 .botao {
-  background: linear-gradient(135deg, #00ffff, #00bcd4);
+  background: linear-gradient(135deg, #6BD6B9, #00C4FF);
   border-radius: 10px;
-  width: 110px;
-  height: 40px;
-  margin: 0 10px;
-  cursor: pointer;
-  border: none;
-  color: #003244;
+  min-width: 130px;         /* Mínimo padrão */
+  padding: 14px 20px;
+  font-size: 14px;
   font-weight: bold;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
 }
+
 
 .botao:hover {
-  background: linear-gradient(135deg, #00d0d0, #0099a0);
+  background: linear-gradient(135deg, #00C4FF, #FF6B9E);
   transform: scale(1.05);
-}
-
-/* Elemento posicionado à esquerda */
-.esquerda {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
 }
