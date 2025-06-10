@@ -1,0 +1,86 @@
+/* Reset básico para o body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Barra superior */
+.barra-total {
+  background: linear-gradient(to right, #0010f7, #0022a8);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho - container do título e menu */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Título principal */
+h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Lista de navegação */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+ul li:hover {
+  color: #aee3ff;
+}
+
+/* Botão estilizado */
+.botao {
+  background: linear-gradient(135deg, #00ffff, #00bcd4);
+  border-radius: 10px;
+  width: 110px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  color: #003244;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.botao:hover {
+  background: linear-gradient(135deg, #00d0d0, #0099a0);
+  transform: scale(1.05);
+}
+
+/* Elemento posicionado à esquerda */
+.esquerda {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
