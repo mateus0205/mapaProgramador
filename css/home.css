@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-  background-color: #f5f7fa;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -39,7 +39,7 @@ body {
 .botao {
   background: linear-gradient(135deg, #6BD6B9, #00C4FF);
   border-radius: 12px;
-  width: 140px;
+  width: 100px;
   height: 48px;
   font-size: 15px;
   font-weight: 600;
@@ -83,7 +83,7 @@ body {
   align-items: center;
   gap: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.17);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
