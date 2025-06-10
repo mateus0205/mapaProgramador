@@ -1,11 +1,12 @@
 /* Reset básico */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
 }
 
-/* Barra superior */
+/* Barra superior moderna */
 .barra-total {
   background: linear-gradient(135deg, #001F3F, #0074E4);
   padding: 24px 48px;
@@ -14,42 +15,103 @@ body {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Título à esquerda */
+/* Título elegante */
 .titulo {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin: 0;
   white-space: nowrap;
 }
 
-/* Container dos botões à direita */
+/* Container dos botões */
 .menu-container {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
-/* Botões coloridos */
+/* Botões com gradiente e efeito sutil */
 .botao {
   background: linear-gradient(135deg, #6BD6B9, #00C4FF);
-  border-radius: 10px;
-  min-width: 130px;         /* Mínimo padrão */
-  padding: 14px 20px;
-  font-size: 14px;
-  font-weight: bold;
+  border-radius: 12px;
+  width: 140px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 600;
   color: white;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
-  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .botao:hover {
   background: linear-gradient(135deg, #00C4FF, #FF6B9E);
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Container dos cards */
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 48px 32px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Card individual */
+.cards {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 16px;
+  padding: 24px 20px;
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cards img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cards span {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #e2e2e2;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+.descricao, i{
+  font-size: 15px;
+  line-height: 1.4;
+
+  color: #000000;
 }
