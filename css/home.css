@@ -116,3 +116,17 @@ body {
 
   color: #000000;
 }
+.menu-container {
+    display: none;
+}
+
+@media (min-width: 801px) {
+    .menu-container {
+        display: flex; /* ou block, dependendo do layout */
+    }
+
+    .menu-toogle {
+        display: none; /* esconder o botão hambúrguer em telas grandes */
+    }
+}
+

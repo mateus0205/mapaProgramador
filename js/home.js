@@ -21,3 +21,14 @@ botao.forEach(botao => {
     });
 });
 
+const botaoMenu = document.querySelector(".menu-toogle");
+const menu = document.querySelector(".menu-container");
+
+botaoMenu.addEventListener("click", function () {
+    if (window.innerWidth <= 800) {
+        // Alterna entre mostrar e esconder
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } 
+    }
+});
