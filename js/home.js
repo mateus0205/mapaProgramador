@@ -10,7 +10,7 @@ botao.forEach(botao => {
         // percorrer todos os cards buscando pelas categoria 
         todosCard.forEach(card => {
             // Se o botão for "Todos", mostra tudo
-            if (categoria === "todos") {
+            if (categoria === "all") {
                 card.style.display = "block";
             } else if (card.classList.contains(categoria)) { // busca pela categoria que foi lida acima
                 card.style.display = "block";
