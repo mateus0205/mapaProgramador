@@ -32,3 +32,16 @@ botaoMenu.addEventListener("click", function () {
         } 
     }
 });
+
+
+const botoes = document.querySelectorAll(".botao");
+
+botoes.forEach(botao => {
+  botao.addEventListener("click", () => {
+    // Remove a classe de todos
+    botoes.forEach(b => b.classList.remove("selecionado"));
+
+    // Adiciona no clicado
+    botao.classList.add("selecionado");
+  });
+});

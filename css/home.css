@@ -59,6 +59,12 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.botao.selecionado {
+  background: linear-gradient(135deg, #00C4FF, #FF6B9E);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 /* Container dos cards */
 .container-cards {
   display: flex;
