@@ -126,13 +126,53 @@ body {
     display: none;
 }
 
+.menu-celular.selecionado{
+  background-color: #001F3F;
+}
 @media (min-width: 801px) {
     .menu-container {
-        display: flex; /* ou block, dependendo do layout */
-    }
+        display: none; /* ou block, dependendo do layout */
+      }
 
     .menu-toogle {
         display: none; /* esconder o botão hambúrguer em telas grandes */
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .menu-container {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    z-index: 1000;
+    display: none; /* começa escondido por padrão */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+    .botao {
+        margin: 6px 0;
+        padding: 12px;
+        font-size: 14px;
+        color: white;
+        background: #00c6ff;
+        border: none;
+        border-radius: 8px;
+        text-align: left;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    .botao.selecionado {
+        background-color: #003366;
     }
 }
 

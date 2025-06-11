@@ -1,3 +1,4 @@
+// botões que filtra cards por categoria   
 const botao = document.querySelectorAll(".botao") // escuta o clique do botao 
 
 botao.forEach(botao => {
@@ -21,6 +22,7 @@ botao.forEach(botao => {
     });
 });
 
+// esconde botoes em telas pequenas 
 const botaoMenu = document.querySelector(".menu-toogle");
 const menu = document.querySelector(".menu-container");
 
@@ -29,19 +31,24 @@ botaoMenu.addEventListener("click", function () {
         // Alterna entre mostrar e esconder
         if (menu.style.display === "block") {
             menu.style.display = "none";
-        } 
+        } else {
+            menu.style.display = "block";
+        }
     }
 });
 
 
+// destaca botão quando selecionado 
 const botoes = document.querySelectorAll(".botao");
 
 botoes.forEach(botao => {
-  botao.addEventListener("click", () => {
-    // Remove a classe de todos
-    botoes.forEach(b => b.classList.remove("selecionado"));
+    botao.addEventListener("click", () => {
+        // Remove a classe de todos
+        botoes.forEach(b => b.classList.remove("selecionado"));
 
-    // Adiciona no clicado
-    botao.classList.add("selecionado");
-  });
+        // Adiciona no clicado
+        botao.classList.add("selecionado");
+
+
+    });
 });
