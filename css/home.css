@@ -131,7 +131,7 @@ body {
 }
 @media (min-width: 801px) {
     .menu-container {
-        display: none; /* ou block, dependendo do layout */
+        display: flex; /* ou block, dependendo do layout */
       }
 
     .menu-toogle {
@@ -175,4 +175,3 @@ body {
         background-color: #003366;
     }
 }
-
