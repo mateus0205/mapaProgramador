@@ -6,6 +6,11 @@ body {
   color: #333;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Barra superior moderna */
 .barra-total {
   background: linear-gradient(135deg, #001F3F, #0074E4);
@@ -122,6 +127,19 @@ body {
 
   color: #000000;
 }
+
+.link {
+  font-size: 15px;
+  line-height: 1.4;
+  text-decoration: underline;
+  color: #1b77d3;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #1b37d3;
+}
+
 .menu-container {
     display: none;
 }
