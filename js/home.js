@@ -19,6 +19,9 @@ botao.forEach(botao => {
                 card.style.display = "none";
             }
         });
+        if(window.innerWidth <= 800){
+            menu.style.display = "none"
+        }
     });
 });
 
