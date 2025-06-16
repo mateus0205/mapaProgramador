@@ -4,11 +4,13 @@ Um projeto visual e interativo desenvolvido com **HTML**, **CSS** e **JavaScript
 
 ## 📌 Funcionalidades
 
-- Interface amigável e responsiva
-- Ícones representativos para cada tecnologia
-- Breves descrições para fácil entendimento
-- Classificação por categorias (Frontend, Backend, Mobile, Cloud, etc.)
-- Filtro de tecnologias por tipo através de botões no topo
+- Interface amigável, moderna e responsiva
+- Ícones ilustrativos para cada tecnologia
+- Breves descrições para fácil compreensão
+- Filtro por categoria (Frontend, Backend, Mobile, Cloud, etc.)
+- Destaque do botão selecionado
+- Menu flutuante com ícone dinâmico (menu → fechar)
+- Esconde o menu automaticamente após clicar em uma categoria (em mobile)
 
 ## 🛠️ Tecnologias Utilizadas
 
