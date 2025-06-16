@@ -18,7 +18,7 @@ botao.forEach(botao => {
             } else {
                 card.style.display = "none";
             }
-        }); 
+        });
     });
 });
 
@@ -33,11 +33,10 @@ botaoMenu.addEventListener("click", function () {
         // Alterna entre mostrar e esconder
         if (menu.style.display === "block") {
             menu.style.display = "none";
-            img.src = "img/icons8-cardápio.svg"
+            img.src = "../img/icons8-cardápio.svg"; // Caminho correto
         } else {
             menu.style.display = "block";
-            // muda de cardapio para close 
-            img.src = "img/icons8-close.svg"
+            img.src = "../img/icons8-close.svg"; // Caminho correto
         }
     }
 });
@@ -63,7 +62,7 @@ const cards = document.querySelectorAll('.cards')
 cards.forEach(card => {
     card.addEventListener("click", () => {
         const url = card.getAttribute('card-url');
-        if(url){
+        if (url) {
             window.open(url, '_blank')
         }
     })
