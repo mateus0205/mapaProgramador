@@ -42,8 +42,6 @@ botaoMenu.addEventListener("click", function () {
     }
 });
 
-
-
 // destaca botão quando selecionado 
 const botoes = document.querySelectorAll(".botao");
 
