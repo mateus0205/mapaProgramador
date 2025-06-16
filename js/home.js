@@ -18,7 +18,7 @@ botao.forEach(botao => {
             } else {
                 card.style.display = "none";
             }
-        });
+        }); // quando seleciona botao no mobile, esconde menu 
         if(window.innerWidth <= 800){
             menu.style.display = "none"
         }
