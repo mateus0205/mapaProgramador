@@ -18,27 +18,30 @@ botao.forEach(botao => {
             } else {
                 card.style.display = "none";
             }
-        }); // quando seleciona botao no mobile, esconde menu 
-        if(window.innerWidth <= 800){
-            menu.style.display = "none"
-        }
+        }); 
     });
 });
 
 // esconde botoes em telas pequenas 
 const botaoMenu = document.querySelector(".menu-toogle");
 const menu = document.querySelector(".menu-container");
+const img = document.querySelector("img")
+
 
 botaoMenu.addEventListener("click", function () {
     if (window.innerWidth <= 800) {
         // Alterna entre mostrar e esconder
         if (menu.style.display === "block") {
             menu.style.display = "none";
+            img.src = "../img/icons8-cardápio.svg"
         } else {
             menu.style.display = "block";
+            // muda de cardapio para close 
+            img.src = "../img/icons8-close.svg"
         }
     }
 });
+
 
 
 // destaca botão quando selecionado 
