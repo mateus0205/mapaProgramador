@@ -37,7 +37,7 @@ botaoMenu.addEventListener("click", function () {
         } else {
             menu.style.display = "block";
             // muda de cardapio para close 
-            img.src = "../img/icons8-close.svg"
+            img.src = "img/icons8-close.svg"
         }
     }
 });
