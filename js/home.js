@@ -30,13 +30,16 @@ const img = document.querySelector(".menu-toogle img")
 
 botaoMenu.addEventListener("click", function () {
     if (window.innerWidth <= 800) {
+        const openIcon = botaoMenu.dataset.open
+        const closeIcon = botaoMenu.dataset.close
+
         // Alterna entre mostrar e esconder
         if (menu.style.display === "block") {
             menu.style.display = "none";
-            img.src = "../img/icons8-cardápio.svg"; // Caminho correto
+            img.src = closeIcon; // Caminho correto
         } else {
             menu.style.display = "block";
-            img.src = "../img/icons8-close.svg"; // Caminho correto
+            img.src = openIcon; // Caminho correto
         }
     }
 });

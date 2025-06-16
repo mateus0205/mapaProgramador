@@ -11,7 +11,9 @@
 <body>
     <div class="barra-total">
         <h1 class="titulo">Mapa da Programação</h1>
-        <div class="menu-toogle" id="menu-toogle"><img src="img/icons8-cardápio.svg" alt="menu-cardapio"></div>
+        <div class="menu-toogle" data-open="/img/icons8-close.svg" data-close="/img/icons8-cardápio.svg">
+            <img src="/img/icons8-cardápio.svg" alt="Menu">
+        </div>
         <div class="menu-container">
             <button class="botao">All</button>
             <button class="botao">Frontend</button>
@@ -64,31 +66,32 @@
             <div class="descricao"><i>"Biblioteca para interfaces modernas"</i></div>
         </div>
 
-        <div class="cards frontend frameworks" card-url="https://angular.dev/overview" >
+        <div class="cards frontend frameworks" card-url="https://angular.dev/overview">
             <img src="img/icons8-angular.svg" alt="">
             <div class="name">Angular</div>
             <div class="descricao"><i>"Framework completo para aplicações web SPA"</i></div>
         </div>
 
-        <div class="cards frontend frameworks" card-url="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
+        <div class="cards frontend frameworks"
+            card-url="https://getbootstrap.com/docs/4.1/getting-started/introduction/">
             <img src="img/icons8-bootstrap.svg" alt="">
             <div class="name">Bootstrap</div>
             <div class="descricao"><i>"Framework CSS com componentes prontos."</i></div>
         </div>
 
-        <div class="cards frontend frameworks" card-url="https://vite.dev/" >
+        <div class="cards frontend frameworks" card-url="https://vite.dev/">
             <img src="img/icons8-rapidamente.svg" alt="">
             <div class="name">Vite</div>
             <div class="descricao"><i>"Bundler moderno, super rápido."</i></div>
         </div>
 
-        <div class="cards frontend frameworks" card-url="https://vuejs.org/guide/introductio" >
+        <div class="cards frontend frameworks" card-url="https://vuejs.org/guide/introductio">
             <img src="img/vuejs.svg" alt="">
             <div class="name">Vue.js</div>
             <div class="descricao"><i>"Framework progressivo para UIs."</i></div>
         </div>
 
-        <div class="cards frontend frameworks" card-url="https://nextjs.org/docs" >
+        <div class="cards frontend frameworks" card-url="https://nextjs.org/docs">
             <img src="img/nextjs-icon-dark-background.png" alt="">
             <div class="name">Next.js</div>
             <div class="descricao"><i>"Framework React com SSR e otimizações."</i></div>
@@ -108,7 +111,8 @@
 
         <div class="cards backend frameworks" card-url="https://docs.djangoproject.com/en/5.2/">
             <img src="img/django.png" alt="">
-            <div class="name">Django</div> <div class="descricao"><i>"Framework Python completo e rápido."</i></div>
+            <div class="name">Django</div>
+            <div class="descricao"><i>"Framework Python completo e rápido."</i></div>
         </div>
 
         <div class="cards banckend frameworks" card-url="https://flask.palletsprojects.com/en/stable/">
@@ -117,7 +121,7 @@
             <div class="descricao"><i>"Microframework web em Python."</i></div>
         </div>
 
-        <div class="cards backend frameworks" card-url="https://guides.rubyonrails.org/" >
+        <div class="cards backend frameworks" card-url="https://guides.rubyonrails.org/">
             <img src="img/icons8-linguagem-de-programação-ruby.svg" alt="">
             <div class="name">Ruby on Rails</div>
             <div class="descricao"><i>" Produtivo e opinativo, em Ruby."</i></div>
@@ -135,13 +139,13 @@
             <div class="descricao"><i>"Linguagem robusta, usada em sistemas grandes e escaláveis."</i></div>
         </div>
 
-        <div class="cards backend" card-url="https://dev.mysql.com/doc/" >
+        <div class="cards backend" card-url="https://dev.mysql.com/doc/">
             <img src="img/+.svg" alt="">
             <div class="name">MySQL</div>
             <div class="descricao"><i>"Banco relacional confiável."</i></div>
         </div>
 
-        <div class="cards tools" card-url="https://www.postgresql.org/docs/" >
+        <div class="cards tools" card-url="https://www.postgresql.org/docs/">
             <img src="img/icons8-postgreesql.svg" alt="">
             <div class="name">PostgreSQL</div>
             <div class="descricao"><i>"Banco relacional avançado."</i></div>
@@ -154,24 +158,24 @@
         </div>
 
         <div class="cards tools cloud" card-url="https://firebase.google.com/docs"">
-            <img src="img/icons8-firebase.svg" alt="">
+            <img src=" img/icons8-firebase.svg" alt="">
             <div class="name">Firebase Firestore</div>
             <div class="descricao"><i>"Banco em nuvem, tempo real."</i></div>
         </div>
 
-        <div class="cards tools cloud" card-url="https://supabase.com/" >
+        <div class="cards tools cloud" card-url="https://supabase.com/">
             <img src="img/icons8-supabase.svg" alt="">
             <div class="name">Supabase</div>
             <div class="descricao"><i>" Alternativa open-source ao Firebase."</i></div>
         </div>
 
-        <div class="cards os" card-url="https://docs.kernel.org/" >
+        <div class="cards os" card-url="https://docs.kernel.org/">
             <img src="img/icons8-linux-96.png" alt="">
             <div class="name">Linux</div>
             <div class="descricao"><i>"Sistema operacional robusto."</i></div>
         </div>
 
-        <div class="cards mobile frameworks" card-url="https://docs.flutter.dev/" >
+        <div class="cards mobile frameworks" card-url="https://docs.flutter.dev/">
             <img src="img/icons8-vibrar-96.png" alt="">
             <div class="name">Flutter</div>
             <div class="descricao"><i>"SDK da Google para apps multiplataforma."</i></div>
@@ -213,7 +217,7 @@
             <div class="descricao"><i>"Linguagem para IOS."</i></div>
         </div>
 
-        <div class="cards os" card-url="https://developer.apple.com/macos/" >
+        <div class="cards os" card-url="https://developer.apple.com/macos/">
             <img src="img/icons8-apple-inc.svg" alt="">
             <div class="name">macOS</div>
             <div class="descricao"><i>"Sistema da Apple, muito usado por desenvolvedores Ios e front-end."</i></div>
@@ -270,12 +274,12 @@
 
 
         <div class="cards tools" card-url="https://git-scm.com/doc"">
-            <img src="img/icons8-git.svg" alt="">
+            <img src=" img/icons8-git.svg" alt="">
             <div class="name">Git</div>
             <div class="descricao"><i>"Controle de versão distribuído."</i></div>
         </div>
 
-        <div class="cards tools" card-url="https://docs.github.com/en" > 
+        <div class="cards tools" card-url="https://docs.github.com/en">
             <img src="img/icons8-github.svg" alt="">
             <div class="name">GitHub</div>
             <div class="descricao"><i>"Hospedagem de código e colaboração com Git."</i></div>
@@ -287,7 +291,7 @@
             <div class="descricao"><i>"Empacotamento de apps em containers."</i></div>
         </div>
 
-        <div class="cards tools"card-url="https://learning.postman.com/docs/introduction/overview/">
+        <div class="cards tools" card-url="https://learning.postman.com/docs/introduction/overview/">
             <img src="img/postman-nocode.webp" alt="">
             <div class="name">Postman</div>
             <div class="descricao"><i>"Testes e requisições de APIs com facilidade."</i></div>
@@ -298,12 +302,13 @@
     <script src="js/home.js"></script>
 </body>
 <footer class="footer">
-  <div class="footer-conteudo">
-    <p>&copy; 2025 Mapa da Programação</p>
-    <div class="footer-links">
-      <a href="https://api.whatsapp.com/qr/L5TZZ73GXLGGF1?autoload=1&app_absent=0">Contato</a>
-      <a target="_blank" href="https://github.com/mateus0205/">GitHub</a>
+    <div class="footer-conteudo">
+        <p>&copy; 2025 Mapa da Programação</p>
+        <div class="footer-links">
+            <a href="https://api.whatsapp.com/qr/L5TZZ73GXLGGF1?autoload=1&app_absent=0">Contato</a>
+            <a target="_blank" href="https://github.com/mateus0205/">GitHub</a>
+        </div>
     </div>
-  </div>
 </footer>
+
 </html>
