@@ -55,3 +55,15 @@ botoes.forEach(botao => {
 
     });
 });
+
+// levar para documentação quando clica no card
+const cards = document.querySelectorAll('.cards')
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        const url = card.getAttribute('card-url');
+        if(url){
+            window.open(url, '_blank')
+        }
+    })
+})
