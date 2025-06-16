@@ -25,7 +25,7 @@ botao.forEach(botao => {
 // esconde botoes em telas pequenas 
 const botaoMenu = document.querySelector(".menu-toogle");
 const menu = document.querySelector(".menu-container");
-const img = document.querySelector("img")
+const img = document.querySelector(".menu-toogle img")
 
 
 botaoMenu.addEventListener("click", function () {
