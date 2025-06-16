@@ -33,7 +33,7 @@ botaoMenu.addEventListener("click", function () {
         // Alterna entre mostrar e esconder
         if (menu.style.display === "block") {
             menu.style.display = "none";
-            img.src = "../img/icons8-cardápio.svg"
+            img.src = "img/icons8-cardápio.svg"
         } else {
             menu.style.display = "block";
             // muda de cardapio para close 
