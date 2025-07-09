@@ -1,26 +1,43 @@
+
 # 🗺️ Mapa da Programação
 
-Um projeto visual e interativo desenvolvido com **HTML**, **CSS** e **JavaScript** que apresenta uma visão geral das principais tecnologias utilizadas no desenvolvimento web. Ideal para iniciantes que desejam entender as diferentes linguagens, bibliotecas e frameworks, ou para profissionais que querem uma visão organizada das ferramentas disponíveis.
+Um projeto visual e interativo desenvolvido com **HTML**, **CSS** e **JavaScript**, que apresenta uma visão geral das principais tecnologias utilizadas no desenvolvimento web. Ideal para iniciantes que desejam entender diferentes linguagens, bibliotecas e frameworks, ou para profissionais que buscam uma visão organizada das ferramentas disponíveis.
+
+---
 
 ## 📌 Funcionalidades
 
 - Interface amigável, moderna e responsiva
 - Ícones ilustrativos para cada tecnologia
-- Breves descrições para fácil compreensão
+- Modal com informações detalhadas de cada tecnologia
 - Filtro por categoria (Frontend, Backend, Mobile, Cloud, etc.)
-- Destaque do botão selecionado
+- Destaque visual no botão selecionado
 - Menu flutuante com ícone dinâmico (menu → fechar)
-- Esconde o menu automaticamente após clicar em uma categoria (em mobile)
+- Fechamento automático do menu ao clicar em uma categoria (mobile)
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** – Estruturação do conteúdo
-- **CSS3** – Estilização visual
-- **JavaScript** – Interatividade e lógica de filtragem
+- **HTML5** – Estruturação da interface e conteúdo semântico  
+- **CSS3** – Estilização visual moderna e responsiva  
+- **JavaScript (Vanilla)** – Interatividade do site sem bibliotecas externas  
+- **JSON** – Armazenamento e carregamento dos dados dos modais  
+- **DOM API** – Manipulação do DOM com `querySelector`, `classList`, `addEventListener`, etc.  
+- **Responsive Design** – Adaptação da interface para diferentes tamanhos de tela  
+- **MutationObserver** – Prevenção de rolagem do `body` ao abrir o modal  
 
-## 📷 Captura de Tela
+---
 
-![Mapa da Programação](./img/print.png)
+## 📷 Capturas de Tela
+
+### 🖼️ Página Principal
+![mapaProgramação](image-2.png)
+
+### 🪟 Modal de Informações
+![mapaProgramação - modal aberto](image-3.png)
+
+---
 
 ## 🚀 Como Executar
 
@@ -28,79 +45,93 @@ Um projeto visual e interativo desenvolvido com **HTML**, **CSS** e **JavaScript
    ```bash
    git clone https://github.com/seu-usuario/mapa-da-programacao.git
    ```
+
 2. Acesse a pasta do projeto:
-    ``` bash
-    cd mapa-da-programacao
-    ```
-3. Abra o arquivo index.html em seu navegador preferido 
+   ```bash
+   cd mapa-da-programacao
+   ```
 
+3. Abra o arquivo `index.html` no navegador.
 
-## 🎯 Lógica de Filtragem e Interação
+---
 
-O projeto utiliza **JavaScript puro** para tornar a interface dinâmica e responsiva. Abaixo estão as principais funcionalidades implementadas:
+## 🎯 Lógica JavaScript
 
-### ✅ Filtragem de Cards por Categoria
+### 📦 `modal.js` – Controle dos Modais
 
-Os botões de categorias (como `Frontend`, `Backend`, `Mobile`, etc.) filtram os cards com base na classe associada a cada card.
+- Carrega dinamicamente os dados de `modais.json`
+- Insere conteúdo no modal com título, ícone, características, usos e curiosidades
+- Mostra ou oculta o modal conforme interações do usuário
+
+```js
+fetch("modais.json")
+  .then(res => res.json())
+  .then(data => {
+    cardData = data;
+    initModals(); // Inicia os eventos do modal
+  });
+```
+
+---
+
+### 🧭 `home.js` – Filtros e Navegação
+
+#### ✅ Filtragem de Cards por Categoria
 
 ```js
 const botao = document.querySelectorAll(".botao");
 
 botao.forEach(botao => {
-    botao.addEventListener("click", function () {
-        const categoria = botao.textContent.toLowerCase();
-        const todosCard = document.querySelectorAll(".cards");
+  botao.addEventListener("click", function () {
+    const categoria = botao.textContent.toLowerCase();
+    const todosCard = document.querySelectorAll(".cards");
 
-        todosCard.forEach(card => {
-            if (categoria === "all") {
-                card.style.display = "block";
-            } else if (card.classList.contains(categoria)) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-        });
+    todosCard.forEach(card => {
+      if (categoria === "all" || card.classList.contains(categoria)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
     });
+  });
 });
 ```
 
-## 📱 Menu Responsivo para Telas Pequenas
+#### 🎨 Destaque do Botão Selecionado
 
-Em dispositivos com largura inferior a 800px, o menu de categorias pode ser exibido ou ocultado clicando no botão de menu.
-``` js 
-const botaoMenu = document.querySelector(".menu-toogle");
-const menu = document.querySelector(".menu-container");
-
-botaoMenu.addEventListener("click", function () {
-    if (window.innerWidth <= 800) {
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
-    }
-});
-```
-
-![alt text](image-1.png)
-
-
-## 🎨 Destaque do Botão Selecionado
-Ao clicar em um botão de categoria, ele recebe a classe .selecionado para destacar visualmente a opção ativa.
-``` js
+```js
 const botoes = document.querySelectorAll(".botao");
 
 botoes.forEach(botao => {
-    botao.addEventListener("click", () => {
-        botoes.forEach(b => b.classList.remove("selecionado"));
-        botao.classList.add("selecionado");
-    });
+  botao.addEventListener("click", () => {
+    botoes.forEach(b => b.classList.remove("selecionado"));
+    botao.classList.add("selecionado");
+  });
 });
-
 ```
-![alt text](image.png)
 
+#### 📱 Menu Hamburguer (Mobile)
 
-## Contribuidores 
+- Abre/fecha menu
+- Fecha automaticamente ao clicar fora ou ao redimensionar para desktop
 
--[@jeffsHenrique](https://github.com/JeffsHenrique)
+#### 🔒 Fechamento do Modal
+
+- Clique no fundo escuro (`fade`)
+- Pressionar tecla `ESC`
+- Prevenção de scroll quando o modal está aberto
+
+```js
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    modal.classList.add("hide");
+    fade.classList.add("hide");
+  }
+});
+```
+
+---
+
+## 👨‍💻 Contribuidores 
+
+- [@jeffsHenrique](https://github.com/JeffsHenrique)
