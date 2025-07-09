@@ -1,0 +1,1015 @@
+{
+  "html5": {
+    "title": "HTML5",
+    "description": "HTML5 é a quinta versão da linguagem de marcação HTML, que define a estrutura e o conteúdo das páginas web.",
+    "characteristics": [
+      "Elementos semânticos (header, nav, main, footer)",
+      "Suporte nativo para áudio e vídeo",
+      "Canvas para gráficos 2D",
+      "Geolocalização",
+      "Web Storage (localStorage, sessionStorage)"
+    ],
+    "usedBy": [
+      "Todos os sites modernos",
+      "Aplicações web",
+      "PWAs"
+    ],
+    "curiosities": [
+      "Foi lançado em 2014",
+      "Eliminou a necessidade de plugins como Flash",
+      "Introduziu mais de 30 novos elementos"
+    ],
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+    "icon": "img/icons8-html5.svg"
+  },
+  "css3": {
+    "title": "CSS3",
+    "description": "CSS3 é a terceira versão da linguagem de folhas de estilo em cascata, usada para definir a apresentação visual de páginas web.",
+    "characteristics": [
+      "Suporte a seletores avançados",
+      "Media queries para design responsivo",
+      "Animações e transições",
+      "Flexbox e Grid Layout para layouts flexíveis",
+      "Sombreamento, gradientes e fontes personalizadas"
+    ],
+    "usedBy": [
+      "Todos os sites modernos",
+      "Aplicações web",
+      "Frameworks CSS"
+    ],
+    "curiosities": [
+      "A especificação CSS3 foi dividida em módulos para facilitar a evolução",
+      "Introduziu suporte nativo a animações, antes feitas com JavaScript",
+      "Permite criar layouts complexos sem usar tabelas ou hacks"
+    ],
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+    "icon": "img/icons8-css3.svg"
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "description": "JavaScript é uma linguagem de programação interpretada, voltada para o desenvolvimento web, permitindo criar páginas interativas e dinâmicas.",
+    "characteristics": [
+      "Linguagem de script client-side e server-side (Node.js)",
+      "Manipulação do DOM (Document Object Model)",
+      "Event-driven, assíncrona e baseada em protótipos",
+      "Suporte a ES6+ com arrow functions, classes e módulos",
+      "API para comunicação assíncrona (AJAX, Fetch)"
+    ],
+    "usedBy": [
+      "Todos os navegadores modernos",
+      "Aplicações web e móveis",
+      "Desenvolvimento backend (Node.js)"
+    ],
+    "curiosities": [
+      "Criado em 10 dias por Brendan Eich em 1995",
+      "Nome original era Mocha, depois LiveScript",
+      "É uma das linguagens mais populares do mundo"
+    ],
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "icon": "img/icons8-javascript.svg"
+  },
+  "typescript": {
+    "title": "TypeScript",
+    "description": "TypeScript é um superconjunto de JavaScript que adiciona tipagem estática opcional à linguagem.",
+    "characteristics": [
+      "Tipagem estática e inferência de tipos",
+      "Compila para JavaScript puro",
+      "Melhor suporte a IDEs e autocompletar",
+      "Suporte a interfaces, enums e generics",
+      "Ampla adoção em projetos modernos"
+    ],
+    "usedBy": [
+      "Grandes aplicações front-end",
+      "Projetos em Angular, React e Node.js",
+      "Times que priorizam escalabilidade"
+    ],
+    "curiosities": [
+      "Criado pela Microsoft em 2012",
+      "Popularizado com o uso em Angular 2+",
+      "Permite detectar erros em tempo de desenvolvimento"
+    ],
+    "link": "https://www.typescriptlang.org/",
+    "icon": "img/icons8-texto-datilografado.svg"
+  },
+  "tailwindcss": {
+    "title": "Tailwind CSS",
+    "description": "Tailwind CSS é um framework utilitário para estilização rápida e responsiva de interfaces com classes predefinidas.",
+    "characteristics": [
+      "Estilização baseada em utilitários",
+      "Mobile-first e altamente personalizável",
+      "Remoção de estilos não usados (purge)",
+      "Integração fácil com qualquer framework",
+      "Classes para cores, espaçamentos, tipografia e layout"
+    ],
+    "usedBy": [
+      "Desenvolvedores de front-end modernos",
+      "Projetos que exigem prototipação rápida",
+      "Aplicações React, Vue, Next.js, etc."
+    ],
+    "curiosities": [
+      "Criado por Adam Wathan em 2017",
+      "Promove reutilização e consistência",
+      "Facilita design sem sair do HTML"
+    ],
+    "link": "https://tailwindcss.com/",
+    "icon": "img/icons8-tailwindcss.svg"
+  },
+  "react": {
+    "title": "React",
+    "description": "React é uma biblioteca JavaScript para construção de interfaces de usuário, mantida pelo Facebook.",
+    "characteristics": [
+      "Componentização",
+      "JSX para declarar UI com JavaScript",
+      "Atualização eficiente com Virtual DOM",
+      "Hooks para gerenciar estado e efeitos colaterais",
+      "Amplo ecossistema e comunidade"
+    ],
+    "usedBy": [
+      "Grandes empresas como Facebook, Instagram",
+      "Projetos front-end modernos",
+      "Aplicações SPA e PWA"
+    ],
+    "curiosities": [
+      "Lançado em 2013",
+      "Permite renderização no servidor com Next.js",
+      "React Native é usado para apps móveis"
+    ],
+    "link": "https://reactjs.org/",
+    "icon": "img/icons8-reagir-80.svg"
+  },
+  "angular": {
+    "title": "Angular",
+    "description": "Angular é um framework de desenvolvimento web baseado em TypeScript, criado pelo Google.",
+    "characteristics": [
+      "Arquitetura baseada em componentes",
+      "Injeção de dependência nativa",
+      "Roteamento, formulários e testes integrados",
+      "Suporte a observables com RxJS",
+      "Ideal para grandes aplicações corporativas"
+    ],
+    "usedBy": [
+      "Grandes sistemas e painéis administrativos",
+      "Projetos que exigem estrutura e consistência",
+      "Times que usam TypeScript intensamente"
+    ],
+    "curiosities": [
+      "AngularJS foi a versão 1.x; Angular moderno é reescrito",
+      "Criado pelo Google",
+      "Atualizações regulares e planejadas"
+    ],
+    "link": "https://angular.io/",
+    "icon": "img/icons8-angular.svg"
+  },
+  "bootstrap": {
+    "title": "Bootstrap",
+    "description": "Bootstrap é um framework front-end open-source que fornece estilos prontos e componentes para construção rápida de interfaces responsivas.",
+    "characteristics": [
+      "Sistema de grid responsivo",
+      "Componentes prontos (botões, modais, navbars)",
+      "Classes utilitárias para espaçamento e cores",
+      "Suporte a personalização via Sass",
+      "Compatível com todos os navegadores modernos"
+    ],
+    "usedBy": [
+      "Sites institucionais",
+      "Painéis administrativos",
+      "Protótipos rápidos"
+    ],
+    "curiosities": [
+      "Criado por desenvolvedores do Twitter",
+      "Um dos frameworks CSS mais populares do mundo",
+      "Inclui jQuery como dependência até a versão 4"
+    ],
+    "link": "https://getbootstrap.com/",
+    "icon": "img/icons8-bootstrap.svg"
+  },
+  "vite": {
+    "title": "Vite",
+    "description": "Vite é uma ferramenta de build e servidor de desenvolvimento rápido para aplicações modernas em JavaScript/TypeScript.",
+    "characteristics": [
+      "Build ultrarrápido baseado em ESModules",
+      "Hot Module Replacement (HMR) instantâneo",
+      "Suporte nativo a TypeScript, JSX e Vue",
+      "Configuração mínima por padrão",
+      "Ideal para projetos com frameworks modernos"
+    ],
+    "usedBy": [
+      "Aplicações em Vue, React, Svelte",
+      "Projetos com foco em desempenho",
+      "Desenvolvedores que buscam simplicidade"
+    ],
+    "curiosities": [
+      "Criado por Evan You (autor do Vue.js)",
+      "Substitui o Webpack em muitos projetos",
+      "Nome vem de 'vite', que significa rápido em francês"
+    ],
+    "link": "https://vitejs.dev/",
+    "icon": "img/icons8-rapidamente.svg"
+  },
+  "vue": {
+    "title": "Vue.js",
+    "description": "Vue.js é um framework JavaScript progressivo para a construção de interfaces de usuário reativas e componentes reutilizáveis.",
+    "characteristics": [
+      "Sintaxe simples e declarativa",
+      "Componentização com Single File Components",
+      "Reatividade nativa com data binding",
+      "Fácil integração com projetos existentes",
+      "Suporte a Vue Router e Vuex"
+    ],
+    "usedBy": [
+      "Projetos de todos os portes",
+      "Desenvolvedores que valorizam simplicidade",
+      "Aplicações com foco em performance"
+    ],
+    "curiosities": [
+      "Criado por Evan You, ex-Google",
+      "Popular na China e na comunidade open-source",
+      "Altamente adotado por freelancers e startups"
+    ],
+    "link": "https://vuejs.org/",
+    "icon": "img/vuejs.svg"
+  },
+  "nextjs": {
+    "title": "Next.js",
+    "description": "Next.js é um framework React para aplicações web com renderização do lado do servidor (SSR) e geração de sites estáticos (SSG).",
+    "characteristics": [
+      "Renderização híbrida (SSR, SSG, ISR)",
+      "Roteamento baseado em arquivos",
+      "API routes nativas",
+      "Excelente performance e SEO",
+      "Suporte a internacionalização e imagens otimizadas"
+    ],
+    "usedBy": [
+      "E-commerces e blogs",
+      "Projetos com foco em SEO",
+      "Aplicações corporativas em React"
+    ],
+    "curiosities": [
+      "Criado pela Vercel",
+      "Base de muitos sites famosos como TikTok e Hulu",
+      "Permite deploy instantâneo com Vercel"
+    ],
+    "link": "https://nextjs.org/",
+    "icon": "img/nextjs-icon-dark-background.png"
+  },
+  "nodejs": {
+    "title": "Node.js",
+    "description": "Node.js é um ambiente de execução JavaScript no lado do servidor, construído sobre o motor V8 do Chrome.",
+    "characteristics": [
+      "Programação assíncrona baseada em eventos",
+      "Utiliza JavaScript fora do navegador",
+      "Gerenciador de pacotes NPM",
+      "Alta escalabilidade e leveza",
+      "Ideal para APIs e aplicações em tempo real"
+    ],
+    "usedBy": [
+      "Backends modernos",
+      "Aplicações em tempo real (chat, jogos)",
+      "Ferramentas de build e automação"
+    ],
+    "curiosities": [
+      "Criado por Ryan Dahl em 2009",
+      "Ecossistema com milhões de pacotes NPM",
+      "Usado por empresas como Netflix e PayPal"
+    ],
+    "link": "https://nodejs.org/",
+    "icon": "img/node-js.png"
+  },
+  "expressjs": {
+    "title": "Express.js",
+    "description": "Express.js é um framework web minimalista para Node.js que facilita a criação de APIs e servidores HTTP.",
+    "characteristics": [
+      "Middleware flexível",
+      "Roteamento simples e poderoso",
+      "Suporte a templates e JSON",
+      "Ideal para REST APIs",
+      "Ecossistema vasto de extensões"
+    ],
+    "usedBy": [
+      "APIs RESTful",
+      "Aplicações back-end com Node.js",
+      "Projetos que priorizam velocidade e simplicidade"
+    ],
+    "curiosities": [
+      "Popularizou o uso de Node.js no backend",
+      "Base de frameworks como NestJS e Sails.js",
+      "Extremamente leve e sem opiniões (unopinionated)"
+    ],
+    "link": "https://expressjs.com/",
+    "icon": "img/icons8-express-js.svg"
+  }, 
+  "django": {
+    "title": "Django",
+    "description": "Django é um framework web de alto nível para Python que permite o desenvolvimento rápido e limpo de aplicações web seguras.",
+    "characteristics": [
+      "Admin automático gerado a partir dos modelos",
+      "ORM robusto para manipulação de banco de dados",
+      "Segurança contra ataques como CSRF e SQL Injection",
+      "Estrutura baseada em MTV (Model-Template-View)",
+      "Inclui autenticação, rotas, formulários e mais"
+    ],
+    "usedBy": [
+      "Startups e empresas que usam Python",
+      "Sistemas administrativos",
+      "Plataformas educacionais e de conteúdo"
+    ],
+    "curiosities": [
+      "Criado para um site de jornalismo (Lawrence Journal-World)",
+      "Seguindo o princípio DRY (Don't Repeat Yourself)",
+      "Possui uma grande comunidade global"
+    ],
+    "link": "https://www.djangoproject.com/",
+    "icon": "img/django.png"
+  },
+  "flask": {
+    "title": "Flask",
+    "description": "Flask é um microframework leve para Python usado para criar aplicações web rápidas e simples.",
+    "characteristics": [
+      "Extremamente flexível e minimalista",
+      "Ideal para APIs e microserviços",
+      "Suporte a Jinja2 para templates",
+      "Possui rotas, sessões e servidor embutido",
+      "Ampla compatibilidade com extensões"
+    ],
+    "usedBy": [
+      "Desenvolvedores Python iniciantes",
+      "Aplicações pequenas e médias",
+      "APIs RESTful"
+    ],
+    "curiosities": [
+      "Criado por Armin Ronacher",
+      "Seu nome vem da comédia ‘Flask of Python’",
+      "Muito usado em protótipos e MVPs"
+    ],
+    "link": "https://flask.palletsprojects.com/",
+    "icon": "img/icons8-frasco.svg"
+  },
+  "rubyonrails": {
+    "title": "Ruby on Rails",
+    "description": "Ruby on Rails é um framework web para a linguagem Ruby que segue o padrão MVC e enfatiza convenção sobre configuração.",
+    "characteristics": [
+      "ORM ActiveRecord para bancos relacionais",
+      "Generators para scaffolding rápido",
+      "Suporte nativo a testes",
+      "Boas práticas embutidas",
+      "Produtividade elevada com poucas linhas de código"
+    ],
+    "usedBy": [
+      "Startups e MVPs",
+      "Sites com CRUD intensivo",
+      "Plataformas como GitHub (inicialmente) e Shopify"
+    ],
+    "curiosities": [
+      "Criado por David Heinemeier Hansson",
+      "Popularizou o padrão REST nos frameworks",
+      "Fortemente influente na criação de frameworks modernos"
+    ],
+    "link": "https://rubyonrails.org/",
+    "icon": "img/icons8-linguagem-de-programação-ruby.svg"
+  },
+  "php": {
+    "title": "PHP",
+    "description": "PHP é uma linguagem de script interpretada do lado do servidor, amplamente usada para desenvolvimento web.",
+    "characteristics": [
+      "Processamento embutido diretamente no HTML",
+      "Amplo suporte em servidores e hospedagens",
+      "Suporte a múltiplos bancos de dados",
+      "Compatível com CMSs como WordPress, Joomla e Drupal",
+      "Frameworks modernos como Laravel e Symfony"
+    ],
+    "usedBy": [
+      "Sites dinâmicos e blogs",
+      "Sistemas de gerenciamento de conteúdo",
+      "Sistemas internos de empresas"
+    ],
+    "curiosities": [
+      "Criado por Rasmus Lerdorf em 1994",
+      "PHP significa ‘PHP: Hypertext Preprocessor’",
+      "Ainda é amplamente usado mesmo após décadas"
+    ],
+    "link": "https://www.php.net/",
+    "icon": "img/icons8-logo-php.svg"
+  },
+  "java": {
+    "title": "Java",
+    "description": "Java é uma linguagem de programação robusta, orientada a objetos e multiplataforma, muito usada em aplicações corporativas e Android.",
+    "characteristics": [
+      "Compilada para bytecode e executada na JVM",
+      "Fortemente tipada e orientada a objetos",
+      "Ampla biblioteca padrão (Java API)",
+      "Suporte a concorrência e multithreading",
+      "Popular em backend com frameworks como Spring"
+    ],
+    "usedBy": [
+      "Empresas de grande porte",
+      "Aplicações bancárias e corporativas",
+      "Apps Android com Android Studio"
+    ],
+    "curiosities": [
+      "Criada pela Sun Microsystems em 1995",
+      "Mote: ‘Write Once, Run Anywhere’",
+      "OpenJDK é a versão open source"
+    ],
+    "link": "https://www.java.com/",
+    "icon": "img/icons8-logo-java-coffee-cup.svg"
+  },
+  "mysql": {
+    "title": "MySQL",
+    "description": "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto muito usado na web.",
+    "characteristics": [
+      "Baseado na linguagem SQL",
+      "Alta performance e escalabilidade",
+      "Muito utilizado com PHP e WordPress",
+      "Suporte a replicação de dados",
+      "Compatível com grandes volumes de dados"
+    ],
+    "usedBy": [
+      "Sites dinâmicos",
+      "Sistemas de e-commerce",
+      "Aplicações com LAMP (Linux, Apache, MySQL, PHP)"
+    ],
+    "curiosities": [
+      "Criado por uma empresa sueca chamada MySQL AB",
+      "Adquirido pela Oracle Corporation",
+      "Nome é uma combinação de ‘My’ (filha do criador) e SQL"
+    ],
+    "link": "https://www.mysql.com/",
+    "icon": "img/mysql.svg"
+  },
+  "postgresql": {
+    "title": "PostgreSQL",
+    "description": "PostgreSQL é um sistema de banco de dados relacional avançado, conhecido por sua robustez e extensibilidade.",
+    "characteristics": [
+      "Código aberto e altamente confiável",
+      "Suporte a tipos de dados avançados (JSON, arrays)",
+      "MVCC para alta concorrência",
+      "Suporte a extensões como PostGIS",
+      "Compatível com SQL padrão e personalizado"
+    ],
+    "usedBy": [
+      "Aplicações corporativas",
+      "Projetos com geolocalização",
+      "Plataformas modernas que requerem integridade"
+    ],
+    "curiosities": [
+      "Conhecido como o banco de dados relacional mais avançado",
+      "Criado na Universidade da Califórnia, Berkeley",
+      "Fortemente usado com Django e frameworks Python"
+    ],
+    "link": "https://www.postgresql.org/",
+    "icon": "img/icons8-postgreesql.svg"
+  },
+  "mongodb": {
+    "title": "MongoDB",
+    "description": "MongoDB é um banco de dados NoSQL orientado a documentos, usado para armazenar dados em formato JSON flexível.",
+    "characteristics": [
+      "Modelo de dados não relacional",
+      "Alta escalabilidade horizontal",
+      "Consultas flexíveis com sintaxe baseada em objetos",
+      "Ideal para aplicações com dados não estruturados",
+      "Suporte a replicação e sharding"
+    ],
+    "usedBy": [
+      "Aplicações modernas em Node.js",
+      "Sistemas com requisitos de alta escalabilidade",
+      "Projetos com dados dinâmicos ou em tempo real"
+    ],
+    "curiosities": [
+      "Criado pela 10gen (atual MongoDB Inc.)",
+      "Usado no stack MERN (Mongo, Express, React, Node)",
+      "Oferece serviço gerenciado via Atlas"
+    ],
+    "link": "https://www.mongodb.com/",
+    "icon": "img/MongoDB.svg"
+  },
+  "firebase": {
+    "title": "Firebase Firestore",
+    "description": "Firestore é um banco de dados em tempo real e escalável do Firebase, ideal para aplicações modernas com sincronização em tempo real.",
+    "characteristics": [
+      "Banco de dados NoSQL em nuvem",
+      "Sincronização de dados em tempo real",
+      "Fácil integração com apps mobile e web",
+      "Escalabilidade automática",
+      "Suporte a regras de segurança e autenticação"
+    ],
+    "usedBy": [
+      "Apps móveis com Flutter ou Android",
+      "Projetos em React e Vue",
+      "Protótipos rápidos e MVPs"
+    ],
+    "curiosities": [
+      "Parte do ecossistema do Google Firebase",
+      "Possui modo offline nativo em dispositivos móveis",
+      "Muito usado com serviços como Firebase Auth e Hosting"
+    ],
+    "link": "https://firebase.google.com/products/firestore",
+    "icon": "img/icons8-firebase.svg"
+  },
+  "supabase": {
+    "title": "Supabase",
+    "description": "Supabase é uma alternativa open-source ao Firebase que utiliza PostgreSQL como banco de dados principal.",
+    "characteristics": [
+      "Baseado em PostgreSQL com tempo real",
+      "Autenticação integrada",
+      "Armazenamento de arquivos",
+      "Dashboard para gerenciamento visual",
+      "APIs geradas automaticamente a partir do banco"
+    ],
+    "usedBy": [
+      "Startups e projetos open-source",
+      "Apps web com necessidade de backend instantâneo",
+      "Desenvolvedores que preferem SQL a NoSQL"
+    ],
+    "curiosities": [
+      "Lançado em 2020",
+      "Forte foco em comunidade open-source",
+      "Permite deploy local ou na nuvem da Supabase"
+    ],
+    "link": "https://supabase.com/",
+    "icon": "img/icons8-supabase.svg"
+  },
+  "linux": {
+    "title": "Linux",
+    "description": "Linux é um sistema operacional de código aberto baseado no núcleo Unix, conhecido por sua estabilidade, segurança e flexibilidade.",
+    "characteristics": [
+      "Sistema multitarefa e multiusuário",
+      "Distribuições variadas como Ubuntu, Debian e Kali",
+      "Alta personalização",
+      "Muito usado em servidores e desenvolvimento",
+      "Comunidade ativa e extensa documentação"
+    ],
+    "usedBy": [
+      "Servidores web",
+      "Desenvolvedores e programadores",
+      "Sistemas embarcados e IoT"
+    ],
+    "curiosities": [
+      "Criado por Linus Torvalds em 1991",
+      "Base de sistemas como Android, Chrome OS e SteamOS",
+      "Usado em 100% dos supercomputadores do mundo"
+    ],
+    "link": "https://www.kernel.org/",
+    "icon": "img/icons8-linux-96.png"
+  },
+  "windows": {
+    "title": "Windows",
+    "description": "Windows é um sistema operacional gráfico desenvolvido pela Microsoft, amplamente utilizado por usuários domésticos e corporativos.",
+    "characteristics": [
+      "Interface gráfica amigável",
+      "Compatibilidade com a maioria dos softwares comerciais",
+      "Integração com produtos Microsoft",
+      "Grande base de usuários",
+      "Disponível em versões Home, Pro e Server"
+    ],
+    "usedBy": [
+      "Usuários domésticos",
+      "Ambientes corporativos",
+      "Jogadores e desenvolvedores .NET"
+    ],
+    "curiosities": [
+      "Primeira versão lançada em 1985",
+      "É o sistema mais utilizado no mundo em desktops",
+      "Windows 11 trouxe suporte nativo a apps Android"
+    ],
+    "link": "https://www.microsoft.com/windows",
+    "icon": "img/icons8-windows-10.svg"
+  },
+  "ubuntu": {
+    "title": "Ubuntu",
+    "description": "Ubuntu é uma das distribuições Linux mais populares, voltada tanto para iniciantes quanto para uso profissional.",
+    "characteristics": [
+      "Baseado no Debian",
+      "Atualizações regulares e suporte LTS",
+      "Interface GNOME moderna",
+      "Instalação fácil e amigável",
+      "Amplo suporte a drivers e softwares"
+    ],
+    "usedBy": [
+      "Desenvolvedores iniciantes",
+      "Servidores em nuvem",
+      "Usuários que buscam alternativa ao Windows"
+    ],
+    "curiosities": [
+      "Mantido pela Canonical",
+      "O nome significa ‘humanidade com os outros’ em zulu",
+      "Possui versões para desktop, servidor e IoT"
+    ],
+    "link": "https://ubuntu.com/",
+    "icon": "img/icons8-ubuntu-96.png"
+  },
+  "debian": {
+    "title": "Debian",
+    "description": "Debian é uma distribuição Linux estável e confiável, conhecida por sua filosofia de software livre e por ser base de outras distros como Ubuntu.",
+    "characteristics": [
+      "Foco em estabilidade e segurança",
+      "Gerenciamento de pacotes via APT",
+      "Projeto 100% comunitário",
+      "Vasta documentação e suporte técnico",
+      "Atualizações menos frequentes que outras distros"
+    ],
+    "usedBy": [
+      "Servidores de produção",
+      "Desenvolvedores que valorizam estabilidade",
+      "Distribuições derivadas como Ubuntu e Kali"
+    ],
+    "curiosities": [
+      "Criado em 1993 por Ian Murdock",
+      "Nome vem da junção de Debra + Ian",
+      "Tem suporte para mais de 60 arquiteturas"
+    ],
+    "link": "https://www.debian.org/",
+    "icon": "img/icons8-debian-96.png"
+  },
+  "kali": {
+    "title": "Kali Linux",
+    "description": "Kali Linux é uma distribuição baseada no Debian voltada para testes de segurança e análise forense digital.",
+    "characteristics": [
+      "Inclui ferramentas para pentest (Nmap, Wireshark, Metasploit)",
+      "Atualizações frequentes",
+      "Suporte a múltiplos ambientes gráficos",
+      "Ideal para profissionais de cibersegurança",
+      "Imagens disponíveis para ARM, VM e WSL"
+    ],
+    "usedBy": [
+      "Analistas de segurança",
+      "Entusiastas de hacking ético",
+      "Cursos de segurança da informação"
+    ],
+    "curiosities": [
+      "Desenvolvido pela Offensive Security",
+      "Base para certificações como OSCP",
+      "Totalmente gratuito e open-source"
+    ],
+    "link": "https://www.kali.org/",
+    "icon": "img/icons8-kali-linux.svg"
+  },
+  "macos": {
+    "title": "macOS",
+    "description": "macOS é o sistema operacional da Apple para seus computadores, conhecido por sua estabilidade, segurança e design refinado.",
+    "characteristics": [
+      "Baseado no Unix (Darwin)",
+      "Interface gráfica intuitiva",
+      "Integração com o ecossistema Apple",
+      "Aplicações exclusivas como Safari, Xcode e Final Cut",
+      "Atualizações frequentes e suporte oficial"
+    ],
+    "usedBy": [
+      "Desenvolvedores iOS/macOS",
+      "Profissionais de design e vídeo",
+      "Usuários do ecossistema Apple"
+    ],
+    "curiosities": [
+      "Originalmente chamado de Mac OS X",
+      "É o sistema padrão nos Macs desde 2001",
+      "Usa o kernel XNU, baseado no Mach"
+    ],
+    "link": "https://www.apple.com/macos/",
+    "icon": "img/icons8-apple-inc.svg"
+  },
+  "android": {
+    "title": "Android",
+    "description": "Android é o sistema operacional móvel mais usado no mundo, baseado no kernel Linux e desenvolvido principalmente pelo Google.",
+    "characteristics": [
+      "Código aberto (AOSP)",
+      "Suporte a milhões de apps via Play Store",
+      "Base para diversas interfaces como One UI, MIUI",
+      "Desenvolvimento em Java e Kotlin",
+      "Atualizações por fabricantes e via OTA"
+    ],
+    "usedBy": [
+      "Dispositivos móveis (celulares, tablets)",
+      "Smart TVs e relógios inteligentes",
+      "Sistemas embarcados e dispositivos IoT"
+    ],
+    "curiosities": [
+      "Inicialmente criado pela Android Inc.",
+      "Adquirido pelo Google em 2005",
+      "Cada versão era nomeada com doces até o Android 10"
+    ],
+    "link": "https://www.android.com/",
+    "icon": "img/icons8-android-os.svg"
+  },
+  "flutter": {
+    "title": "Flutter",
+    "description": "Flutter é um framework UI open-source da Google para criar aplicações nativas compiladas para mobile, web e desktop a partir de uma única base de código.",
+    "characteristics": [
+      "Baseado na linguagem Dart",
+      "Widgets personalizáveis e nativos",
+      "Hot reload para desenvolvimento ágil",
+      "Desempenho próximo ao nativo",
+      "UI consistente entre plataformas"
+    ],
+    "usedBy": [
+      "Aplicações móveis e web",
+      "Startups que buscam cross-platform",
+      "Times que desejam código compartilhado"
+    ],
+    "curiosities": [
+      "Lançado em 2017",
+      "Adotado por empresas como Alibaba e Nubank",
+      "Permite criar UIs complexas com facilidade"
+    ],
+    "link": "https://flutter.dev/",
+    "icon": "img/icons8-vibrar-96.png"
+  },
+  "kotlin": {
+    "title": "Kotlin",
+    "description": "Kotlin é uma linguagem de programação moderna, concisa e segura, oficialmente suportada pelo Android como alternativa ao Java.",
+    "characteristics": [
+      "Sintaxe clara e concisa",
+      "Total interoperabilidade com Java",
+      "Null safety por padrão",
+      "Suporte a programação funcional",
+      "Compilação para JVM, Android e JavaScript"
+    ],
+    "usedBy": [
+      "Desenvolvedores Android",
+      "Projetos multiplataforma com Kotlin Multiplatform",
+      "Sistemas backend com Ktor e Spring"
+    ],
+    "curiosities": [
+      "Criado pela JetBrains",
+      "Adotado como linguagem oficial Android em 2017",
+      "Inspirado em linguagens como Scala e Groovy"
+    ],
+    "link": "https://kotlinlang.org/",
+    "icon": "img/icons8-kotlin.svg"
+  },
+"aws": {
+    "title": "AWS",
+    "description": "Amazon Web Services (AWS) é a principal plataforma de computação em nuvem do mundo, oferecendo infraestrutura sob demanda com alta escalabilidade e disponibilidade.",
+    "characteristics": [
+      "Serviços como EC2, S3, Lambda, RDS",
+      "Cobrança por uso",
+      "Ampla rede global de data centers",
+      "Segurança e conformidade integradas",
+      "Suporte para aplicações escaláveis e resilientes"
+    ],
+    "usedBy": [
+      "Grandes empresas e startups",
+      "Hospedagem de APIs e sistemas back-end",
+      "Soluções de machine learning, IoT e Big Data"
+    ],
+    "curiosities": [
+      "Lançada em 2006 pela Amazon",
+      "Líder de mercado em cloud computing",
+      "Usada por Netflix, NASA, Twitch e muitas outras"
+    ],
+    "link": "https://aws.amazon.com/pt/",
+    "icon": "img/icons8-amazon-web-services.svg"
+  },
+  "netlify": {
+    "title": "Netlify",
+    "description": "Netlify é uma plataforma para implantação contínua e hospedagem de sites estáticos e aplicações front-end.",
+    "characteristics": [
+      "Deploy com git push",
+      "Suporte a JAMstack",
+      "CDN global integrado",
+      "Formulários e autenticação integrados",
+      "Funções serverless com Netlify Functions"
+    ],
+    "usedBy": [
+      "Desenvolvedores front-end",
+      "Projetos JAMstack",
+      "Sites pessoais e landing pages"
+    ],
+    "curiosities": [
+      "Permite deploy gratuito de projetos open-source",
+      "Conecta-se facilmente com GitHub e GitLab",
+      "Oferece previews automáticos por branch"
+    ],
+    "link": "https://www.netlify.com/",
+    "icon": "img/netfliy.jpeg"
+  },
+  "vercel": {
+    "title": "Vercel",
+    "description": "Vercel é uma plataforma de deploy focada em aplicações front-end modernas, especialmente otimizada para projetos em Next.js.",
+    "characteristics": [
+      "Deploy contínuo com integração Git",
+      "Otimizado para SSR e SSG",
+      "Pré-visualizações automáticas de PRs",
+      "Funções serverless integradas",
+      "CDN global com cache inteligente"
+    ],
+    "usedBy": [
+      "Projetos com Next.js",
+      "Aplicações React e front-end modernos",
+      "Startups e equipes ágeis"
+    ],
+    "curiosities": [
+      "Criado pelos mesmos criadores do Next.js",
+      "Suporte nativo a edge functions",
+      "Muito usado na comunidade open-source"
+    ],
+    "link": "https://vercel.com/",
+    "icon": "img/vercel.png"
+  },
+  "azure": {
+    "title": "Azure",
+    "description": "Microsoft Azure é uma plataforma de nuvem que oferece serviços de infraestrutura, inteligência artificial, bancos de dados e muito mais.",
+    "characteristics": [
+      "Integração com Microsoft 365 e Windows Server",
+      "Suporte a VMs, containers, IA e DevOps",
+      "Alta escalabilidade e disponibilidade",
+      "Serviços híbridos e multinuvem",
+      "Segurança empresarial e compliance"
+    ],
+    "usedBy": [
+      "Empresas que usam tecnologia Microsoft",
+      "Projetos corporativos e governamentais",
+      "Soluções de IA, análise e IoT"
+    ],
+    "curiosities": [
+      "Lançado em 2010 como Windows Azure",
+      "2º maior provedor de nuvem pública",
+      "Oferece serviços exclusivos como Azure DevOps"
+    ],
+    "link": "https://azure.microsoft.com/",
+    "icon": "img/icons8-azure.svg"
+  },
+  "googlecloud": {
+    "title": "Google Cloud",
+    "description": "Google Cloud Platform (GCP) é o serviço de computação em nuvem do Google com foco em performance, dados e inteligência artificial.",
+    "characteristics": [
+      "Infraestrutura usada pelo YouTube e Gmail",
+      "Serviços como Compute Engine, App Engine, BigQuery",
+      "Foco em big data e machine learning",
+      "Rede privada global de alta velocidade",
+      "Ferramentas para CI/CD e DevOps"
+    ],
+    "usedBy": [
+      "Startups com foco em dados",
+      "Empresas que usam Firebase ou Kubernetes",
+      "Plataformas de streaming e análise"
+    ],
+    "curiosities": [
+      "Oferece créditos gratuitos para novos usuários",
+      "Forte integração com IA/ML do Google",
+      "Altamente usado por empresas de tecnologia"
+    ],
+    "link": "https://cloud.google.com/",
+    "icon": "img/icons8-google-cloud.svg"
+  },
+  "nestjs": {
+    "title": "NestJS",
+    "description": "NestJS é um framework Node.js progressivo para a criação de aplicações escaláveis e eficientes do lado do servidor.",
+    "characteristics": [
+      "Arquitetura baseada em módulos",
+      "Suporte a TypeScript nativamente",
+      "Integrável com Express e Fastify",
+      "Princípios inspirados no Angular",
+      "Ótimo para microserviços e APIs RESTful"
+    ],
+    "usedBy": [
+      "Desenvolvedores TypeScript",
+      "Aplicações empresariais",
+      "Projetos com arquitetura modular"
+    ],
+    "curiosities": [
+      "Open-source e mantido por uma comunidade ativa",
+      "Muito usado com Prisma, TypeORM, JWT",
+      "Framework backend com estrutura opinativa"
+    ],
+    "link": "https://nestjs.com/",
+    "icon": "img/NestJS.svg"
+  },
+  "springboot": {
+    "title": "Spring Boot",
+    "description": "Spring Boot é um framework que simplifica o desenvolvimento de aplicações Java, reduzindo a configuração e facilitando a criação de serviços web.",
+    "characteristics": [
+      "Configuração mínima",
+      "Servidor embutido (Tomcat, Jetty)",
+      "Forte integração com Spring Ecosystem",
+      "Suporte a REST, JPA, segurança",
+      "Ideal para microserviços"
+    ],
+    "usedBy": [
+      "Sistemas corporativos em Java",
+      "APIs robustas e seguras",
+      "Aplicações monolíticas e microserviços"
+    ],
+    "curiosities": [
+      "Parte do ecossistema Spring da Pivotal",
+      "Muito usado em bancos e fintechs",
+      "Suporte ativo da comunidade Java"
+    ],
+    "link": "https://spring.io/projects/spring-boot",
+    "icon": "img/spring.png"
+  },
+  "git": {
+    "title": "Git",
+    "description": "Git é um sistema de controle de versão distribuído, essencial para o versionamento de código e colaboração entre desenvolvedores.",
+    "characteristics": [
+      "Rastreia alterações no código-fonte",
+      "Permite trabalho em equipe com branches",
+      "Open-source e rápido",
+      "Desconectado da nuvem (funciona localmente)",
+      "Suporte a merge, rebase, stash, etc."
+    ],
+    "usedBy": [
+      "Todos os tipos de desenvolvedores",
+      "Projetos colaborativos",
+      "Equipes ágeis e CI/CD"
+    ],
+    "curiosities": [
+      "Criado por Linus Torvalds em 2005",
+      "Usado em praticamente todos os projetos modernos",
+      "Comando mais famoso: git push origin main"
+    ],
+    "link": "https://git-scm.com/",
+    "icon": "img/icons8-git.svg"
+  },
+  "github": {
+    "title": "GitHub",
+    "description": "GitHub é uma plataforma de hospedagem de código-fonte com controle de versão usando Git, muito popular entre desenvolvedores.",
+    "characteristics": [
+      "Repositórios públicos e privados",
+      "Suporte a pull requests e issues",
+      "GitHub Actions para CI/CD",
+      "Visualização de código e histórico de commits",
+      "Integração com VS Code, Slack, etc."
+    ],
+    "usedBy": [
+      "Projetos open-source",
+      "Times de desenvolvimento",
+      "Organizações e empresas"
+    ],
+    "curiosities": [
+      "Adquirido pela Microsoft em 2018",
+      "Símbolo da plataforma é o Octocat",
+      "Plataforma padrão para colaboração em software"
+    ],
+    "link": "https://github.com/",
+    "icon": "img/icons8-github.svg"
+  },
+  "docker": {
+    "title": "Docker",
+    "description": "Docker é uma plataforma que permite empacotar aplicações e suas dependências em contêineres, garantindo consistência entre ambientes.",
+    "characteristics": [
+      "Contêineres leves e isolados",
+      "Portabilidade entre ambientes (dev, test, prod)",
+      "Imagens versionadas no Docker Hub",
+      "Integração com orquestradores como Kubernetes",
+      "Facilita CI/CD e DevOps"
+    ],
+    "usedBy": [
+      "Equipes de DevOps",
+      "Aplicações escaláveis e microserviços",
+      "Desenvolvedores que buscam ambiente replicável"
+    ],
+    "curiosities": [
+      "Lançado em 2013 pela Docker Inc.",
+      "Muito usado em pipelines automatizadas",
+      "Comando clássico: docker run hello-world"
+    ],
+    "link": "https://www.docker.com/",
+    "icon": "img/icons8-docker.svg"
+  },
+  "postman": {
+    "title": "Postman",
+    "description": "Postman é uma plataforma para desenvolvimento, teste e documentação de APIs, essencial para desenvolvedores backend e front-end.",
+    "characteristics": [
+      "Envio de requisições HTTP com facilidade",
+      "Criação de coleções de testes",
+      "Visualização de respostas JSON/XML",
+      "Integração com APIs REST e GraphQL",
+      "Ambientes e variáveis personalizáveis"
+    ],
+    "usedBy": [
+      "Desenvolvedores e testadores de APIs",
+      "Equipes de QA",
+      "Projetos que envolvem comunicação entre serviços"
+    ],
+    "curiosities": [
+      "Iniciou como extensão do Chrome",
+      "Possui versão desktop e web",
+      "Suporte a scripts automatizados com JavaScript"
+    ],
+    "link": "https://www.postman.com/",
+    "icon": "img/postman-nocode.webp"
+  },
+  "swift": {
+  "title": "Swift",
+  "description": "Swift é uma linguagem de programação poderosa e intuitiva desenvolvida pela Apple para criar aplicações para iOS, macOS, watchOS e tvOS.",
+  "characteristics": [
+    "Sintaxe moderna e concisa",
+    "Segurança de tipos e gerenciamento de memória automático",
+    "Altamente performática",
+    "Integração com Cocoa e Cocoa Touch",
+    "Suporte robusto a programação funcional e orientada a objetos"
+  ],
+  "usedBy": [
+    "Aplicações iOS e macOS",
+    "Desenvolvedores Apple",
+    "Startups focadas em mobile"
+  ],
+  "curiosities": [
+    "Lançada pela Apple em 2014 como substituta do Objective-C",
+    "É open source desde 2015",
+    "Possui um playground interativo que facilita o aprendizado"
+  ],
+  "link": "https://swift.org/",
+  "icon": "img/icons8-swift.svg"
+}
+
+}
