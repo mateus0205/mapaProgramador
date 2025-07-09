@@ -1,7 +1,7 @@
 /* Reset básico */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
   background-color: #ffffff;
   color: #333;
   overflow-x: hidden;
@@ -9,7 +9,7 @@ body {
 
 /* Barra superior moderna */
 .barra-total {
-  background: linear-gradient(135deg, #001F3F, #0074E4);
+  background: linear-gradient(135deg, #001f3f, #0074e4);
   padding: 20px 38px;
   display: flex;
   align-items: center;
@@ -20,6 +20,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  position: relative;
 }
 
 /* Título elegante */
@@ -31,7 +32,27 @@ body {
   white-space: nowrap;
 }
 
-/* Container dos botões */
+/* Menu hambúrguer - oculto por padrão no desktop */
+.menu-toogle {
+  display: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  z-index: 1001;
+}
+
+.menu-toogle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-toogle img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+/* Container dos botões - visível no desktop */
 .menu-container {
   display: flex;
   gap: 12px;
@@ -42,7 +63,7 @@ body {
 
 /* Botões com gradiente e efeito sutil */
 .botao {
-  background: linear-gradient(135deg, #6BD6B9, #00C4FF);
+  background: linear-gradient(135deg, #6bd6b9, #00c4ff);
   border-radius: 12px;
   padding: 10px 16px;
   font-size: 15px;
@@ -60,13 +81,13 @@ body {
 }
 
 .botao:hover {
-  background: linear-gradient(135deg, #00C4FF, #FF6B9E);
+  background: linear-gradient(135deg, #00c4ff, #ff6b9e);
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .botao.selecionado {
-  background: linear-gradient(135deg, #00C4FF, #FF6B9E);
+  background: linear-gradient(135deg, #00c4ff, #ff6b9e);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -74,7 +95,7 @@ body {
 .container-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 40px 24px;
   padding: 40px 5%;
   box-sizing: border-box;
@@ -86,7 +107,10 @@ body {
   color: #000000;
   border-radius: 16px;
   padding: 24px 20px;
-  width: 200px;
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  flex: 0 0 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,6 +119,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.17);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  gap: 16px;
 }
 
 .cards:hover {
@@ -120,68 +145,191 @@ body {
   color: #000000;
 }
 
-.descricao, i {
+.descricao,
+i {
   font-size: 15px;
   line-height: 1.4;
   color: #000000;
 }
 
-.menu-container {
-  display: none;
+/* remove sublinhado dos links */
+a {
+  text-decoration: none;
 }
 
-.menu-celular.selecionado {
-  background-color: #001F3F;
+/* botão azul com ícone */
+.botaoDocs {
+  width: 250px;
+  height: 40px;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.3s;
 }
 
-@media (min-width: 801px) {
-  .menu-container {
-    display: flex;
-  }
-
-  .menu-toogle {
-    display: none;
-  }
+.botaoDocs:hover {
+  background-color: #1d4ed8;
 }
 
-@media (max-width: 800px) {
-  .menu-container {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: linear-gradient(to bottom, #00c6ff, #0072ff);
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
-    z-index: 1000;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 5px;
-    margin-right: 10px;
-  }
-
-  .botao {
-    margin: 6px 0;
-    padding: 12px;
-    font-size: 14px;
-    color: white;
-    background: #00c6ff;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 0;
-    width: 120px;
-  }
-
-  .botao.selecionado {
-    background-color: #003366;
-  }
+/* botão borda azul com ícone */
+.botaoInfo {
+  width: 250px;
+  height: 40px;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.3s;
 }
-.footer {
-  background: linear-gradient(135deg, #001F3F, #0074E4);
+
+.botaoInfo:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.botaoDocs i {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.botaoInfo i {
+  color: #2563eb;
+  font-size: 0.75rem;
+}
+
+/* modal */
+button:hover {
+  opacity: 1;
+}
+
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1100;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1200;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-body p {
+  margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#close-modal {
+  padding: 8px 14px;
+  background-color: #e5e7eb;
+  color: #374151;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#close-modal:hover {
+  background-color: #d1d5db;
+  transform: scale(1.05);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color: #e0e7ff;
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+.botaoDocsModal {
+  width: 100%;
+  max-width: 95%;
+  height: 45px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.botaoDocsModal i {
+  font-size: 0.85rem;
+  color: white;
+}
+
+.botaoDocsModal:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  background: linear-gradient(135deg, #001f3f, #0074e4);
   color: white;
   padding: 24px 20px;
   text-align: center;
@@ -214,5 +362,131 @@ body {
 }
 
 .footer-links a:hover {
-  color: #00ff00
+  color: #00ff00;
+}
+
+.card-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  /* Mostra o menu hambúrguer no mobile */
+  .menu-toogle {
+    display: block;
+  }
+
+  /* Menu container no mobile */
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: linear-gradient(135deg, #001f3f, #0074e4);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 200px;
+
+    /* Inicialmente oculto */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+
+    /* Transições suaves */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Layout em coluna no mobile */
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  /* Menu aberto */
+  .menu-container.show {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Botões no menu mobile */
+  .menu-container .botao {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+  }
+
+  .menu-container .botao:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-container .botao.selecionado {
+    background: linear-gradient(135deg, #00c4ff, #ff6b9e);
+    border-color: transparent;
+  }
+
+  /* Ajustes gerais para mobile */
+  .barra-total {
+    padding: 15px 20px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  .container-cards {
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .cards {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .botaoDocs,
+  .botaoInfo {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .barra-total {
+    padding: 18px 30px;
+  }
+
+  .menu-container {
+    gap: 10px;
+  }
+
+  .botao {
+    width: 90px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Animação para o ícone do menu */
+.menu-toogle img {
+  transition: transform 0.3s ease;
+}
+
+.menu-toogle.active img {
+  transform: rotate(180deg);
 }

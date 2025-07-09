@@ -1,72 +1,121 @@
-// botões que filtra cards por categoria   
-const botao = document.querySelectorAll(".botao") // escuta o clique do botao 
+// Seleciona elementos principais
+const botoes = document.querySelectorAll(".botao")
+const cards = document.querySelectorAll(".cards")
+const botaoMenu = document.querySelector(".menu-toogle")
+const menu = document.querySelector(".menu-container")
+const imgMenu = document.querySelector(".menu-toogle img")
+const modal = document.getElementById("modal")
+const fade = document.getElementById("fade")
 
-botao.forEach(botao => {
-    botao.addEventListener("click", function (event) {
-        // verifica a categoria -> frontend | backend | mobile 
-        const categoria = botao.textContent.toLowerCase()
-        // escuta os cards 
-        const todosCard = document.querySelectorAll(".cards")
-
-        // percorrer todos os cards buscando pelas categoria 
-        todosCard.forEach(card => {
-            // Se o botão for "Todos", mostra tudo
-            if (categoria === "all") {
-                card.style.display = "block";
-            } else if (card.classList.contains(categoria)) { // busca pela categoria que foi lida acima
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-        });
-    });
-});
-
-// esconde botoes em telas pequenas 
-const botaoMenu = document.querySelector(".menu-toogle");
-const menu = document.querySelector(".menu-container");
-const img = document.querySelector(".menu-toogle img")
-
-
-botaoMenu.addEventListener("click", function () {
-    if (window.innerWidth <= 800) {
-        const openIcon = botaoMenu.dataset.open
-        const closeIcon = botaoMenu.dataset.close
-
-        // Alterna entre mostrar e esconder
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-            img.src = closeIcon; // Caminho correto
-        } else {
-            menu.style.display = "block";
-            img.src = openIcon; // Caminho correto
-        }
+// --- Função que filtra os cards e destaca o botão selecionado ---
+function filtrarCards(categoria, botaoClicado) {
+  cards.forEach((card) => {
+    if (categoria === "all") {
+      card.style.display = "flex"
+    } else if (card.classList.contains(categoria)) {
+      card.style.display = "flex"
+    } else {
+      card.style.display = "none"
     }
-});
+  })
 
-// destaca botão quando selecionado 
-const botoes = document.querySelectorAll(".botao");
+  // Destaque visual no botão clicado
+  botoes.forEach((b) => b.classList.remove("selecionado"))
+  botaoClicado.classList.add("selecionado")
 
-botoes.forEach(botao => {
-    botao.addEventListener("click", () => {
-        // Remove a classe de todos
-        botoes.forEach(b => b.classList.remove("selecionado"));
+  // Fecha menu no mobile, se estiver aberto
+  if (window.innerWidth <= 768 && menu.classList.contains("show")) {
+    fecharMenu()
+  }
+}
 
-        // Adiciona no clicado
-        botao.classList.add("selecionado");
+// --- Função para abrir o menu ---
+function abrirMenu() {
+  menu.classList.add("show")
+  botaoMenu.classList.add("active")
+  imgMenu.src = botaoMenu.dataset.close
+  imgMenu.alt = "Fechar menu"
+}
 
+// --- Função para fechar o menu ---
+function fecharMenu() {
+  menu.classList.remove("show")
+  botaoMenu.classList.remove("active")
+  imgMenu.src = botaoMenu.dataset.open
+  imgMenu.alt = "Abrir menu"
+}
 
-    });
-});
-
-// levar para documentação quando clica no card
-const cards = document.querySelectorAll('.cards')
-
-cards.forEach(card => {
-    card.addEventListener("click", () => {
-        const url = card.getAttribute('card-url');
-        if (url) {
-            window.open(url, '_blank')
-        }
-    })
+// --- Evento de clique nos botões para filtro ---
+botoes.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    const categoria = botao.textContent.toLowerCase()
+    filtrarCards(categoria, botao)
+  })
 })
+
+// --- Toggle menu hambúrguer ---
+botaoMenu.addEventListener("click", (e) => {
+  e.stopPropagation()
+
+  if (menu.classList.contains("show")) {
+    fecharMenu()
+  } else {
+    abrirMenu()
+  }
+})
+
+// --- Fecha o menu ao clicar fora dele ---
+document.addEventListener("click", (event) => {
+  if (window.innerWidth <= 768) {
+    const isClickInsideMenu = menu.contains(event.target)
+    const isClickOnToggle = botaoMenu.contains(event.target)
+
+    if (!isClickInsideMenu && !isClickOnToggle && menu.classList.contains("show")) {
+      fecharMenu()
+    }
+  }
+})
+
+// --- Fecha menu ao redimensionar para desktop ---
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 && menu.classList.contains("show")) {
+    fecharMenu()
+  }
+})
+
+// --- Modal ---
+// Previne fechamento ao clicar dentro do modal
+modal.addEventListener("click", (event) => {
+  event.stopPropagation()
+})
+
+// Fecha modal ao clicar no fade (fundo escuro)
+fade.addEventListener("click", () => {
+  modal.classList.add("hide")
+  fade.classList.add("hide")
+})
+
+// Fecha modal ao pressionar ESC
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    if (!modal.classList.contains("hide")) {
+      modal.classList.add("hide")
+      fade.classList.add("hide")
+    }
+  }
+})
+
+// --- Previne scroll no body quando modal está aberto ---
+const observer = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    if (mutation.attributeName === "class") {
+      if (modal.classList.contains("hide")) {
+        document.body.style.overflow = ""
+      } else {
+        document.body.style.overflow = "hidden"
+      }
+    }
+  })
+})
+
+observer.observe(modal, { attributes: true })
