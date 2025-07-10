@@ -457,11 +457,14 @@ footer {
     min-width: 280px;
     max-width: 280px;
   }
-
+  #modal{
+    width: 85%;
+    max-width: 400px;
+  }
   .botaoDocs,
   .botaoInfo {
-    width: 100%;
-    max-width: 260px;
+    width: 260px;
+    
   }
 }
 
@@ -480,6 +483,7 @@ footer {
     font-size: 14px;
     padding: 8px 12px;
   }
+
 }
 
 /* Animação para o ícone do menu */
