@@ -372,7 +372,37 @@ footer {
   width: 100%;
   align-items: center;
 }
+.botaoQuiz {
+  width: 100%;
+  max-width: 95%;
+  height: 45px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color:#fbbf24;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+.botaoQuiz:hover {
+    background-color: #f59e0b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.botaoQuiz i {
+  font-size: 0.85rem;
+  color: white;
+}
 /* Responsividade para mobile */
 @media (max-width: 768px) {
   /* Mostra o menu hambúrguer no mobile */
