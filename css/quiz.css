@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+}
+
+.header {
+  background: linear-gradient(90deg, #001f3f, #0074e4);
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.voltarBtn {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.quiz-container {
+  max-width: 720px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#quiz-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.question label {
+  display: block;
+  margin: 4px 0;
+}
+
+#submit-quiz {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#submit-quiz:hover {
+  background-color: #1e40af;
+}
+.options-container {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option {
+  font-size: 0.95rem;
+  color: #1f2937;
+}

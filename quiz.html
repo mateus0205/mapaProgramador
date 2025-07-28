@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - HTML5</title>
+  <link rel="stylesheet" href="css/quiz.css" />
+  <script src="https://kit.fontawesome.com/seu-kit-fontawesome.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Mapa da Programação</h1>
+    <nav>
+      <a href="index.html" class="voltarBtn">
+        <i class="fa-solid fa-arrow-left"></i> Voltar ao Mapa
+      </a>
+    </nav>
+  </header>
+
+  <main class="quiz-container">
+    <h2 id="quiz-title">Quiz sobre <span id="tecnologia">HTML5</span></h2>
+
+    <div id="quiz-box">
+      <!-- Questões são inseridas via JavaScript -->
+    </div>
+
+    <button id="submit-quiz">Enviar Respostas</button>
+    <div id="quiz-resultado"></div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
