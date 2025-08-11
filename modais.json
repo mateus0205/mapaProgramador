@@ -1010,6 +1010,29 @@
   ],
   "link": "https://swift.org/",
   "icon": "img/icons8-swift.svg"
+},"figma": {
+  "title": "Figma",
+  "description": "Figma é uma ferramenta colaborativa baseada na web para design de interfaces, prototipagem e criação de sistemas de design.",
+  "characteristics": [
+    "Design vetorial e de interfaces em tempo real",
+    "Colaboração simultânea entre vários usuários",
+    "Protótipos interativos e animados",
+    "Sistema de componentes reutilizáveis",
+    "Plugins e integração com outras ferramentas"
+  ],
+  "usedBy": [
+    "Designers de UI/UX",
+    "Times que precisam de colaboração remota",
+    "Agências e freelancers focados em design ágil"
+  ],
+  "curiosities": [
+    "Lançado em 2016, rapidamente ganhou popularidade mundial",
+    "Permite edição simultânea como Google Docs",
+    "Suporta versões desktop e totalmente online"
+  ],
+  "link": "https://www.figma.com/",
+  "icon": "img/icons8-figma.svg"
 }
+
 
 }
