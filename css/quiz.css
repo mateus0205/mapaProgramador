@@ -24,7 +24,8 @@ body {
   transition: background 0.3s ease;
 }
 .voltarBtn:hover {
-  background-color: #1d4ed8;
+  background-color: #fc0;
+  color: white;
 }
 
 .quiz-container {
@@ -97,21 +98,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  .quiz-container {
-    padding: 20px;
-    margin: 20px;
-  }
-  .question h3 {
-    font-size: 1rem;
-  }
-  #submit-quiz {
-    width: 100%;
-    padding: 12px;
-  }
-}
-
 footer {
   background: linear-gradient(135deg, #001f3f, #0074e4);
   color: white;
@@ -172,4 +158,36 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .question h3 {
+    font-size: 1rem;
+  }
+
+  #submit-quiz {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .voltarBtn {
+    width: auto; /* deixa o tamanho do texto */
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    display: inline-block; /* garante que ele não quebre */
+    text-align: center;
+  }
+
+  /* Se precisar alinhar o botão à direita */
+  .header-quiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* permite quebrar linha em telas muito pequenas */
+  }
 }
