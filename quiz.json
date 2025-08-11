@@ -2,28 +2,28 @@
   "html5": [
     {
       "pergunta": "Qual elemento define um bloco de navegação?",
-      "opcoes": ["<nav>", "<div>", "<section>", "<header>"],
-      "resposta": "<nav>"
+      "opcoes": ["nav", "div", "section", "header"],
+      "resposta": "nav"
     },
     {
       "pergunta": "Qual elemento é usado para vídeos?",
-      "opcoes": ["<media>", "<video>", "<movie>", "<stream>"],
-      "resposta": "<video>"
+      "opcoes": ["media", "video", "movie", "stream"],
+      "resposta": "video"
     },
     {
-      "pergunta": "Qual atributo do elemento <input> define um campo obrigatório?",
+      "pergunta": "Qual atributo do elemento input define um campo obrigatório?",
       "opcoes": ["required", "placeholder", "mandatory", "validate"],
       "resposta": "required"
     },
     {
       "pergunta": "Qual elemento semântico é usado para rodapé?",
-      "opcoes": ["<footer>", "<bottom>", "<end>", "<section>"],
-      "resposta": "<footer>"
+      "opcoes": ["footer", "bottom", "end", "section"],
+      "resposta": "footer"
     },
     {
       "pergunta": "Qual elemento é usado para agrupar conteúdo independente e autocontido?",
-      "opcoes": ["<article>", "<section>", "<aside>", "<div>"],
-      "resposta": "<article>"
+      "opcoes": ["article", "section", "aside", "div"],
+      "resposta": "article"
     }
   ],
   "css3": [
@@ -88,7 +88,7 @@
     },
     {
       "pergunta": "Como declarar um array de números em TypeScript?",
-      "opcoes": ["number[]", "array<number>", "numbers[]", "int[]"],
+      "opcoes": ["number[]", "arraynumber", "numbers[]", "int[]"],
       "resposta": "number[]"
     },
     {
@@ -107,7 +107,7 @@
       "resposta": "tsc"
     }
   ],
-  "tailwindCss": [
+  "tailwindcss": [
     {
       "pergunta": "Qual classe define margem superior de 4 unidades?",
       "opcoes": ["mt-4", "margin-top-4", "m-t4", "top-4"],
@@ -242,7 +242,7 @@
       "resposta": "npm run dev"
     }
   ],
-  "vue.js": [
+  "vue": [
     {
       "pergunta": "Qual comando cria um novo projeto Vue 3 com CLI?",
       "opcoes": ["vue create", "npm create vue@latest", "vue new", "npx vue-cli"],
@@ -269,7 +269,7 @@
       "resposta": "mounted"
     }
   ],
-  "next.js": [
+  "nextjs": [
     {
       "pergunta": "Qual comando cria um novo projeto Next.js?",
       "opcoes": ["npx create-next-app", "npm init next", "next new", "next create"],
@@ -296,7 +296,7 @@
       "resposta": "getServerSideProps"
     }
   ],
-  "node.js": [
+  "nodejs": [
     {
       "pergunta": "Qual comando inicia um arquivo Node.js chamado app.js?",
       "opcoes": ["node app.js", "npm app.js", "start app.js", "node run app.js"],
@@ -323,7 +323,7 @@
       "resposta": "npm install -g"
     }
   ],
-  "express.js": [
+  "expressjs": [
     {
       "pergunta": "Qual comando instala o Express.js?",
       "opcoes": ["npm install express", "npm express", "node install express", "npm add express.js"],
@@ -404,7 +404,7 @@
       "resposta": "Flask-SQLAlchemy"
     }
   ],
-  "ruby": [
+  "rubyonrails": [
     {
       "pergunta": "Qual comando inicia o console interativo do Ruby?",
       "opcoes": ["irb", "ruby console", "rb console", "ruby run"],
@@ -434,8 +434,8 @@
    "php": [
     {
       "pergunta": "Qual tag inicia um código PHP?",
-      "opcoes": ["<?php", "<php>", "<?", "<script php>"],
-      "resposta": "<?php"
+      "opcoes": ["?php", "php", "?", "script php"],
+      "resposta": "?php"
     },
     {
       "pergunta": "Qual função imprime texto em PHP?",
@@ -566,7 +566,7 @@
       "resposta": "ObjectId"
     }
   ],
-  "firebase firestore": [
+  "firebase": [
     {
       "pergunta": "Qual comando inicializa um projeto Firebase?",
       "opcoes": ["firebase init", "firebase start", "firebase new", "firebase setup"],
@@ -781,7 +781,7 @@
       "resposta": "/etc/apt/sources.list"
     }
   ],
-  "kali linux": [
+  "kali": [
     {
       "pergunta": "Kali Linux é voltado para qual uso principal?",
       "opcoes": ["Pentest", "Servidores", "Desenvolvimento", "Escritório"],
@@ -997,7 +997,7 @@
       "resposta": "Azure CLI"
     }
   ],
-  "google cloud": [
+  "googlecloud": [
     {
       "pergunta": "Google Cloud é mantido por qual empresa?",
       "opcoes": ["Google", "Amazon", "Microsoft", "Oracle"],
@@ -1024,7 +1024,7 @@
       "resposta": "gcloud"
     }
   ],
-  "netjs": [
+  "nestjs": [
     {
       "pergunta": "NetJS é frequentemente confundido com qual framework popular?",
       "opcoes": ["NestJS", "Next.js", "Nuxt.js", "Express.js"],

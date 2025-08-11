@@ -14,9 +14,12 @@ function initModals() {
 
   const modalTitle = document.querySelector("#modal-title");
   const modalBody = document.querySelector("#modal-body");
+
   const modalDocsLink = document.querySelector("#modal-docs-link");
-  
-const modalIcon = document.querySelector("#modal-icon");
+  const modalQuizLink = document.querySelector(".botaoQuiz"); 
+
+
+  const modalIcon = document.querySelector("#modal-icon");
 
 const openModal = (id) => {
   const data = cardData[id];
@@ -27,6 +30,13 @@ const openModal = (id) => {
   modalDocsLink.href = data.link;
   modalIcon.src = data.icon;
   modalIcon.alt = `Ícone de ${data.title}`;
+
+    // Define o link do quiz com o tema (usa o id que você recebeu do botão)
+  modalQuizLink.href = `quiz.html?tema=${encodeURIComponent(id)}`;
+
+  // Se quiser deixar o texto do botão mais descritivo:
+  modalQuizLink.innerHTML = `<i class="fa-solid fa-circle-question"></i> Resolva um Quiz sobre ${data.title}`;
+
 
   // Monta conteúdo do corpo
   let bodyHTML = `

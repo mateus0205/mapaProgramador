@@ -5,6 +5,18 @@ const tema = params.get("tema");
 // Passa o tema para o quiz.js (opcional)
 window.quizTema = tema;
 
+
+// Inicia o quiz assim que o script carregar
+const container = document.getElementById('quiz-box');
+
+if (!tema) {
+  container.innerHTML = `
+    <p class="aviso">Nenhum tema selecionado. Volte ao mapa, abra o modal do tema desejado e clique em "Resolva um Quiz sobre".</p>
+  `;
+} else {
+  carregarQuiz(tema);
+}
+
 function carregarQuiz(tema) {
   fetch('quiz.json')
     .then(res => res.json())
