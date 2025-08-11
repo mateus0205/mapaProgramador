@@ -1,55 +1,59 @@
+// Pega o tema da URL, ex: quiz.html?tema=javascript
+const params = new URLSearchParams(window.location.search);
+const tema = params.get("tema");
 
+// Passa o tema para o quiz.js (opcional)
+window.quizTema = tema;
 
-// Obtém tema pela URL (ex: ?tema=html5)
-const urlParams = new URLSearchParams(window.location.search);
-const tema = urlParams.get("tema") || "html5";
-document.getElementById("tecnologia").textContent = tema.toUpperCase();
+function carregarQuiz(tema) {
+  fetch('quiz.json')
+    .then(res => res.json())
+    .then(data => {
+      if (!data[tema]) {
+        console.error(`Tema "${tema}" não encontrado no JSON`);
+        return;
+      }
+      montarQuiz(data[tema]);
+    })
+    .catch(err => console.error("Erro ao carregar quiz:", err));
+}
 
-// Renderiza as perguntas na tela
-const quizBox = document.getElementById("quiz-box");
-perguntas[tema].forEach((q, index) => {
-  const perguntaDiv = document.createElement("div");
-  perguntaDiv.classList.add("question");
+function montarQuiz(perguntas) {
+  const container = document.getElementById('quiz-box'); // corrigido o ID
+  container.innerHTML = '';
 
-  const titulo = document.createElement("h3");
-  titulo.innerHTML = `${index + 1}. ${q.pergunta}`;
-  perguntaDiv.appendChild(titulo);
+  perguntas.forEach((q, i) => {
+    const perguntaElem = document.createElement('div');
+    perguntaElem.classList.add('pergunta');
 
-  const opcoesContainer = document.createElement("div");
-  opcoesContainer.classList.add("options-container");
+    perguntaElem.innerHTML = `
+      <h3>${i + 1}. ${q.pergunta}</h3>
+      ${q.opcoes.map(op => `
+        <label>
+          <input type="radio" name="q${i}" value="${op}"> ${op}
+        </label>
+      `).join('')}
+    `;
 
-  q.opcoes.forEach(op => {
-    const label = document.createElement("label");
-    label.classList.add("option");
-
-    const input = document.createElement("input");
-    input.type = "radio";
-    input.name = `q${index}`;
-    input.value = op;
-
-    label.appendChild(input);
-    label.appendChild(document.createTextNode(` ${op}`));
-    opcoesContainer.appendChild(label);
+    container.appendChild(perguntaElem);
   });
 
-  perguntaDiv.appendChild(opcoesContainer);
-  quizBox.appendChild(perguntaDiv);
-});
+  const btn = document.createElement('button');
+  btn.textContent = 'Enviar Respostas';
+  btn.onclick = () => verificarRespostas(perguntas);
+  container.appendChild(btn);
+}
 
-
-// Avalia as respostas ao enviar
-document.getElementById("submit-quiz").addEventListener("click", () => {
+function verificarRespostas(perguntas) {
   let acertos = 0;
-
-  perguntas[tema].forEach((q, i) => {
-    const selecionado = document.querySelector(`input[name="q${i}"]:checked`);
-    if (selecionado && selecionado.value === q.resposta) {
+  perguntas.forEach((q, i) => {
+    const marcado = document.querySelector(`input[name="q${i}"]:checked`);
+    if (marcado && marcado.value === q.resposta) {
       acertos++;
     }
   });
+  alert(`Você acertou ${acertos} de ${perguntas.length} questões!`);
+}
 
-  const resultado = document.getElementById("quiz-resultado");
-  resultado.innerHTML = `
-    <h3>Você acertou ${acertos} de ${perguntas[tema].length}!</h3>
-  `;
-});
+// Inicia o quiz assim que o script carregar
+carregarQuiz(tema);

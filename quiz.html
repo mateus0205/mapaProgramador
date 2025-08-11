@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz - HTML5</title>
+  <title>Quiz</title>
   <link rel="stylesheet" href="css/quiz.css" />
   <script src="https://kit.fontawesome.com/seu-kit-fontawesome.js" crossorigin="anonymous"></script>
 </head>
@@ -18,36 +18,12 @@
   </header>
 
   <main class="quiz-container">
-    <h2 id="quiz-title">Quiz sobre <span id="tecnologia">HTML5</span></h2>
-
-    <div id="quiz-box">
-      <!-- Questões são inseridas via JavaScript -->const perguntas = {
-  html5: [
-    {
-      pergunta: "Qual elemento define um bloco de navegação?",
-      opcoes: ["<nav>", "<div>", "<section>", "<header>"],
-      resposta: "<nav>",
-    },
-    {
-      pergunta: "Qual elemento é usado para vídeos?",
-      opcoes: ["<media>", "<video>", "<movie>", "<stream>"],
-      resposta: "<video>",
-    },
-  ],
-  css3: [
-    {
-      pergunta: "Qual propriedade define a cor do fundo?",
-      opcoes: ["color", "background-color", "fill", "bg-color"],
-      resposta: "background-color",
-    }
-  ]
-};
-    </div>
-
-    <button id="submit-quiz">Enviar Respostas</button>
-    <div id="quiz-resultado"></div>
+    <!-- Aqui o JS vai injetar as perguntas -->
+    <div id="quiz-box"></div>
   </main>
 
+  <!-- Script do quiz -->
   <script src="js/quiz.js"></script>
+
 </body>
 </html>
