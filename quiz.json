@@ -214,5 +214,1002 @@
       "opcoes": ["p-3", "padding-3", "pad-3", "pd-3"],
       "resposta": "p-3"
     }
+  ],
+  "vite": [
+    {
+      "pergunta": "Qual comando cria um novo projeto com Vite?",
+      "opcoes": ["npm create vite@latest", "npm init vite", "npx vite new", "vite start"],
+      "resposta": "npm create vite@latest"
+    },
+    {
+      "pergunta": "Qual é a principal vantagem do Vite?",
+      "opcoes": ["Build rápido", "Compatibilidade com IE6", "Foco em backend", "Suporte apenas a PHP"],
+      "resposta": "Build rápido"
+    },
+    {
+      "pergunta": "Qual arquivo define a configuração principal no Vite?",
+      "opcoes": ["vite.config.js", "vite.js", "config.vite.js", "vitefile.js"],
+      "resposta": "vite.config.js"
+    },
+    {
+      "pergunta": "Por padrão, o Vite usa qual servidor de desenvolvimento?",
+      "opcoes": ["ESBuild", "Webpack", "Parcel", "Rollup"],
+      "resposta": "ESBuild"
+    },
+    {
+      "pergunta": "Qual comando inicia o servidor de desenvolvimento no Vite?",
+      "opcoes": ["npm run dev", "vite dev", "npm start", "vite serve"],
+      "resposta": "npm run dev"
+    }
+  ],
+  "vue.js": [
+    {
+      "pergunta": "Qual comando cria um novo projeto Vue 3 com CLI?",
+      "opcoes": ["vue create", "npm create vue@latest", "vue new", "npx vue-cli"],
+      "resposta": "npm create vue@latest"
+    },
+    {
+      "pergunta": "Qual diretiva Vue renderiza um elemento condicionalmente?",
+      "opcoes": ["v-if", "v-for", "v-bind", "v-show"],
+      "resposta": "v-if"
+    },
+    {
+      "pergunta": "Qual método é usado para reagir a mudanças de dados?",
+      "opcoes": ["watch", "observe", "listen", "react"],
+      "resposta": "watch"
+    },
+    {
+      "pergunta": "Qual atributo é usado para vinculação de dados dinâmica?",
+      "opcoes": [":", "@", "#", "$"],
+      "resposta": ":"
+    },
+    {
+      "pergunta": "Qual hook é chamado quando o componente é montado?",
+      "opcoes": ["mounted", "created", "beforeMount", "mountedHook"],
+      "resposta": "mounted"
+    }
+  ],
+  "next.js": [
+    {
+      "pergunta": "Qual comando cria um novo projeto Next.js?",
+      "opcoes": ["npx create-next-app", "npm init next", "next new", "next create"],
+      "resposta": "npx create-next-app"
+    },
+    {
+      "pergunta": "Qual função é usada para renderização estática?",
+      "opcoes": ["getStaticProps", "getServerSideProps", "renderStatic", "staticPage"],
+      "resposta": "getStaticProps"
+    },
+    {
+      "pergunta": "Qual pasta armazena as páginas no Next.js?",
+      "opcoes": ["pages", "src/pages", "routes", "views"],
+      "resposta": "pages"
+    },
+    {
+      "pergunta": "Qual comando inicia o modo de desenvolvimento no Next.js?",
+      "opcoes": ["npm run dev", "next dev", "npm start", "next serve"],
+      "resposta": "npm run dev"
+    },
+    {
+      "pergunta": "Qual função é usada para renderização no lado do servidor?",
+      "opcoes": ["getServerSideProps", "getStaticProps", "serverRender", "SSRProps"],
+      "resposta": "getServerSideProps"
+    }
+  ],
+  "node.js": [
+    {
+      "pergunta": "Qual comando inicia um arquivo Node.js chamado app.js?",
+      "opcoes": ["node app.js", "npm app.js", "start app.js", "node run app.js"],
+      "resposta": "node app.js"
+    },
+    {
+      "pergunta": "Qual módulo nativo do Node.js é usado para criar servidores HTTP?",
+      "opcoes": ["http", "fs", "url", "server"],
+      "resposta": "http"
+    },
+    {
+      "pergunta": "Qual comando inicializa um projeto Node.js criando package.json?",
+      "opcoes": ["npm init", "node init", "npm start", "node create"],
+      "resposta": "npm init"
+    },
+    {
+      "pergunta": "Qual função lê arquivos de forma assíncrona?",
+      "opcoes": ["fs.readFile", "fs.readFileSync", "fs.open", "fs.read"],
+      "resposta": "fs.readFile"
+    },
+    {
+      "pergunta": "Qual comando instala um pacote globalmente?",
+      "opcoes": ["npm install -g", "npm global add", "node add -g", "npm -g install"],
+      "resposta": "npm install -g"
+    }
+  ],
+  "express.js": [
+    {
+      "pergunta": "Qual comando instala o Express.js?",
+      "opcoes": ["npm install express", "npm express", "node install express", "npm add express.js"],
+      "resposta": "npm install express"
+    },
+    {
+      "pergunta": "Qual método do Express lida com requisições GET?",
+      "opcoes": ["app.get()", "app.post()", "app.request()", "app.fetch()"],
+      "resposta": "app.get()"
+    },
+    {
+      "pergunta": "Qual objeto contém dados enviados via POST?",
+      "opcoes": ["req.body", "req.query", "req.params", "req.data"],
+      "resposta": "req.body"
+    },
+    {
+      "pergunta": "Qual método inicia o servidor Express?",
+      "opcoes": ["app.listen()", "app.run()", "server.start()", "express.listen()"],
+      "resposta": "app.listen()"
+    },
+    {
+      "pergunta": "Qual middleware integrado do Express lida com JSON?",
+      "opcoes": ["express.json()", "express.body()", "express.data()", "express.parseJson()"],
+      "resposta": "express.json()"
+    }
+  ],
+  "django": [
+    {
+      "pergunta": "Qual comando cria um novo projeto Django?",
+      "opcoes": ["django-admin startproject", "django create project", "python manage.py newproject", "django-admin new"],
+      "resposta": "django-admin startproject"
+    },
+    {
+      "pergunta": "Qual arquivo armazena as configurações principais do Django?",
+      "opcoes": ["settings.py", "config.py", "main.py", "env.py"],
+      "resposta": "settings.py"
+    },
+    {
+      "pergunta": "Qual comando aplica migrações no banco de dados?",
+      "opcoes": ["python manage.py migrate", "django migrate", "python migrate.py", "manage.py dbmigrate"],
+      "resposta": "python manage.py migrate"
+    },
+    {
+      "pergunta": "Qual comando cria um novo app no Django?",
+      "opcoes": ["python manage.py startapp", "django startapp", "python startapp.py", "django-admin createapp"],
+      "resposta": "python manage.py startapp"
+    },
+    {
+      "pergunta": "Qual ORM é usado pelo Django por padrão?",
+      "opcoes": ["Django ORM", "SQLAlchemy", "Peewee", "Sequelize"],
+      "resposta": "Django ORM"
+    }
+  ],
+  "flask": [
+    {
+      "pergunta": "Qual comando instala o Flask?",
+      "opcoes": ["pip install flask", "flask install", "python install flask", "pip3 flask install"],
+      "resposta": "pip install flask"
+    },
+    {
+      "pergunta": "Qual objeto do Flask representa a aplicação?",
+      "opcoes": ["Flask()", "App()", "Application()", "Server()"],
+      "resposta": "Flask()"
+    },
+    {
+      "pergunta": "Qual método define uma rota no Flask?",
+      "opcoes": ["@app.route()", "@route()", "app.get()", "@Flask.route()"],
+      "resposta": "@app.route()"
+    },
+    {
+      "pergunta": "Qual comando executa a aplicação Flask?",
+      "opcoes": ["flask run", "python run", "flask start", "python app.py run"],
+      "resposta": "flask run"
+    },
+    {
+      "pergunta": "Qual extensão Flask é usada para trabalhar com bancos SQL?",
+      "opcoes": ["Flask-SQLAlchemy", "Flask-Database", "Flask-ORM", "Flask-SQL"],
+      "resposta": "Flask-SQLAlchemy"
+    }
+  ],
+  "ruby": [
+    {
+      "pergunta": "Qual comando inicia o console interativo do Ruby?",
+      "opcoes": ["irb", "ruby console", "rb console", "ruby run"],
+      "resposta": "irb"
+    },
+    {
+      "pergunta": "Qual símbolo indica interpolação de variáveis em strings?",
+      "opcoes": ["#{ }", "$()", "${}", "%{}"],
+      "resposta": "#{ }"
+    },
+    {
+      "pergunta": "Qual comando executa um arquivo Ruby chamado app.rb?",
+      "opcoes": ["ruby app.rb", "rb app.rb", "run app.rb", "ruby run app.rb"],
+      "resposta": "ruby app.rb"
+    },
+    {
+      "pergunta": "Qual estrutura de dados armazena pares chave-valor?",
+      "opcoes": ["Hash", "Array", "List", "Tuple"],
+      "resposta": "Hash"
+    },
+    {
+      "pergunta": "Qual método imprime texto com quebra de linha no Ruby?",
+      "opcoes": ["puts", "print", "echo", "write"],
+      "resposta": "puts"
+    }
+  ], 
+   "php": [
+    {
+      "pergunta": "Qual tag inicia um código PHP?",
+      "opcoes": ["<?php", "<php>", "<?", "<script php>"],
+      "resposta": "<?php"
+    },
+    {
+      "pergunta": "Qual função imprime texto em PHP?",
+      "opcoes": ["echo", "print", "printf", "write"],
+      "resposta": "echo"
+    },
+    {
+      "pergunta": "Qual símbolo é usado para variáveis no PHP?",
+      "opcoes": ["$", "@", "%", "&"],
+      "resposta": "$"
+    },
+    {
+      "pergunta": "Qual função retorna o número de caracteres de uma string?",
+      "opcoes": ["strlen()", "count()", "size()", "length()"],
+      "resposta": "strlen()"
+    },
+    {
+      "pergunta": "Qual extensão é usada para arquivos PHP?",
+      "opcoes": [".php", ".ph", ".phtml", ".php3"],
+      "resposta": ".php"
+    }
+  ],
+  "java": [
+    {
+      "pergunta": "Qual método é o ponto de entrada de um programa Java?",
+      "opcoes": ["main", "start", "run", "execute"],
+      "resposta": "main"
+    },
+    {
+      "pergunta": "Qual palavra-chave define uma classe em Java?",
+      "opcoes": ["class", "Class", "define", "object"],
+      "resposta": "class"
+    },
+    {
+      "pergunta": "Qual tipo primitivo representa números decimais?",
+      "opcoes": ["float", "int", "double", "decimal"],
+      "resposta": "float"
+    },
+    {
+      "pergunta": "Qual palavra-chave cria um novo objeto?",
+      "opcoes": ["new", "create", "object", "instance"],
+      "resposta": "new"
+    },
+    {
+      "pergunta": "Qual modificador de acesso permite acesso apenas na mesma classe?",
+      "opcoes": ["private", "protected", "public", "default"],
+      "resposta": "private"
+    }
+  ],
+  "mysql": [
+    {
+      "pergunta": "Qual comando seleciona um banco de dados no MySQL?",
+      "opcoes": ["USE", "SELECT DB", "DATABASE", "CHOOSE"],
+      "resposta": "USE"
+    },
+    {
+      "pergunta": "Qual comando retorna todos os registros de uma tabela?",
+      "opcoes": ["SELECT * FROM", "GET ALL", "SHOW TABLE", "FETCH ALL"],
+      "resposta": "SELECT * FROM"
+    },
+    {
+      "pergunta": "Qual comando insere dados em uma tabela?",
+      "opcoes": ["INSERT INTO", "ADD TO", "PUT INTO", "INSERT VALUES"],
+      "resposta": "INSERT INTO"
+    },
+    {
+      "pergunta": "Qual comando remove todos os registros de uma tabela?",
+      "opcoes": ["DELETE FROM", "DROP TABLE", "REMOVE ALL", "CLEAR TABLE"],
+      "resposta": "DELETE FROM"
+    },
+    {
+      "pergunta": "Qual comando cria um índice?",
+      "opcoes": ["CREATE INDEX", "ADD INDEX", "MAKE INDEX", "INDEX CREATE"],
+      "resposta": "CREATE INDEX"
+    }
+  ],
+  "postgresql": [
+    {
+      "pergunta": "Qual comando conecta ao PostgreSQL no terminal?",
+      "opcoes": ["psql", "pgcli", "pgconnect", "postgres"],
+      "resposta": "psql"
+    },
+    {
+      "pergunta": "Qual tipo de dado armazena texto de tamanho variável?",
+      "opcoes": ["VARCHAR", "TEXT", "CHAR", "STRING"],
+      "resposta": "VARCHAR"
+    },
+    {
+      "pergunta": "Qual comando lista todas as tabelas no psql?",
+      "opcoes": ["\\dt", "\\tables", "\\list", "\\showtables"],
+      "resposta": "\\dt"
+    },
+    {
+      "pergunta": "Qual comando cria uma nova tabela?",
+      "opcoes": ["CREATE TABLE", "NEW TABLE", "ADD TABLE", "MAKE TABLE"],
+      "resposta": "CREATE TABLE"
+    },
+    {
+      "pergunta": "Qual comando retorna apenas linhas distintas?",
+      "opcoes": ["SELECT DISTINCT", "SELECT UNIQUE", "DISTINCT SELECT", "UNIQUE SELECT"],
+      "resposta": "SELECT DISTINCT"
+    }
+  ],
+  "mongodb": [
+    {
+      "pergunta": "Qual comando lista todos os bancos de dados no MongoDB shell?",
+      "opcoes": ["show dbs", "list databases", "db.list()", "display dbs"],
+      "resposta": "show dbs"
+    },
+    {
+      "pergunta": "Qual comando insere um documento?",
+      "opcoes": ["insertOne()", "add()", "insert()", "put()"],
+      "resposta": "insertOne()"
+    },
+    {
+      "pergunta": "Qual comando busca documentos em uma coleção?",
+      "opcoes": ["find()", "search()", "select()", "query()"],
+      "resposta": "find()"
+    },
+    {
+      "pergunta": "Qual comando remove todos os documentos de uma coleção?",
+      "opcoes": ["deleteMany()", "removeAll()", "clear()", "deleteAll()"],
+      "resposta": "deleteMany()"
+    },
+    {
+      "pergunta": "Qual tipo de dado armazena identificadores únicos?",
+      "opcoes": ["ObjectId", "UUID", "ID", "Key"],
+      "resposta": "ObjectId"
+    }
+  ],
+  "firebase firestore": [
+    {
+      "pergunta": "Qual comando inicializa um projeto Firebase?",
+      "opcoes": ["firebase init", "firebase start", "firebase new", "firebase setup"],
+      "resposta": "firebase init"
+    },
+    {
+      "pergunta": "Qual método adiciona um documento a uma coleção?",
+      "opcoes": ["addDoc()", "insertDoc()", "pushDoc()", "createDoc()"],
+      "resposta": "addDoc()"
+    },
+    {
+      "pergunta": "Qual função retorna todos os documentos de uma coleção?",
+      "opcoes": ["getDocs()", "listDocs()", "fetchDocs()", "readDocs()"],
+      "resposta": "getDocs()"
+    },
+    {
+      "pergunta": "Qual comando instala o SDK do Firebase?",
+      "opcoes": ["npm install firebase", "npm firebase", "firebase install", "npm add firebase"],
+      "resposta": "npm install firebase"
+    },
+    {
+      "pergunta": "Qual função escuta atualizações em tempo real?",
+      "opcoes": ["onSnapshot()", "listen()", "watch()", "subscribe()"],
+      "resposta": "onSnapshot()"
+    }
+  ],
+  "supabase": [
+    {
+      "pergunta": "Qual comando instala o cliente JavaScript do Supabase?",
+      "opcoes": ["npm install @supabase/supabase-js", "npm supabase install", "supabase init", "npm add supabase"],
+      "resposta": "npm install @supabase/supabase-js"
+    },
+    {
+      "pergunta": "Qual site oficial gerencia bancos do Supabase?",
+      "opcoes": ["app.supabase.com", "supabase.io", "dashboard.supabase.com", "supabase.dev"],
+      "resposta": "app.supabase.com"
+    },
+    {
+      "pergunta": "Qual função executa consultas SQL no Supabase?",
+      "opcoes": ["from()", "query()", "select()", "table()"],
+      "resposta": "from()"
+    },
+    {
+      "pergunta": "Qual comando inicializa o Supabase localmente?",
+      "opcoes": ["supabase start", "supabase init", "supabase dev", "supabase local"],
+      "resposta": "supabase start"
+    },
+    {
+      "pergunta": "O Supabase é uma alternativa open source a qual serviço?",
+      "opcoes": ["Firebase", "MongoDB Atlas", "AWS DynamoDB", "Heroku"],
+      "resposta": "Firebase"
+    }
+  ],
+  "linux": [
+    {
+      "pergunta": "Qual comando lista arquivos e pastas?",
+      "opcoes": ["ls", "dir", "list", "show"],
+      "resposta": "ls"
+    },
+    {
+      "pergunta": "Qual comando muda o diretório atual?",
+      "opcoes": ["cd", "chdir", "move", "goto"],
+      "resposta": "cd"
+    },
+    {
+      "pergunta": "Qual comando mostra o diretório atual?",
+      "opcoes": ["pwd", "whereami", "dir", "ls"],
+      "resposta": "pwd"
+    },
+    {
+      "pergunta": "Qual comando remove arquivos?",
+      "opcoes": ["rm", "delete", "remove", "del"],
+      "resposta": "rm"
+    },
+    {
+      "pergunta": "Qual comando dá permissão de execução?",
+      "opcoes": ["chmod +x", "perm +exec", "allow run", "exec on"],
+      "resposta": "chmod +x"
+    }
+  ],"flutter": [
+    {
+      "pergunta": "Qual comando cria um novo projeto Flutter?",
+      "opcoes": ["flutter create", "flutter new", "flutter init", "flutter start"],
+      "resposta": "flutter create"
+    },
+    {
+      "pergunta": "Qual linguagem principal o Flutter utiliza?",
+      "opcoes": ["Dart", "Java", "Kotlin", "JavaScript"],
+      "resposta": "Dart"
+    },
+    {
+      "pergunta": "Qual widget é usado para criar layouts responsivos?",
+      "opcoes": ["LayoutBuilder", "ResponsiveWidget", "FlexBox", "GridView"],
+      "resposta": "LayoutBuilder"
+    },
+    {
+      "pergunta": "Qual comando executa o app no dispositivo conectado?",
+      "opcoes": ["flutter run", "flutter start", "flutter dev", "flutter exec"],
+      "resposta": "flutter run"
+    },
+    {
+      "pergunta": "Qual widget é usado para rolagem?",
+      "opcoes": ["ListView", "ScrollView", "Scrollable", "ScrollContainer"],
+      "resposta": "ListView"
+    }
+  ],
+  "kotlin": [
+    {
+      "pergunta": "Kotlin é mantido por qual empresa?",
+      "opcoes": ["JetBrains", "Google", "Oracle", "Microsoft"],
+      "resposta": "JetBrains"
+    },
+    {
+      "pergunta": "Qual palavra-chave define uma função em Kotlin?",
+      "opcoes": ["fun", "function", "def", "fn"],
+      "resposta": "fun"
+    },
+    {
+      "pergunta": "Qual tipo representa números inteiros?",
+      "opcoes": ["Int", "Integer", "Number", "Long"],
+      "resposta": "Int"
+    },
+    {
+      "pergunta": "Qual operador é usado para interpolação de strings?",
+      "opcoes": ["$", "#", "@", "%"],
+      "resposta": "$"
+    },
+    {
+      "pergunta": "Qual palavra-chave cria uma variável imutável?",
+      "opcoes": ["val", "let", "var", "const"],
+      "resposta": "val"
+    }
+  ],
+  "windows": [
+    {
+      "pergunta": "Qual atalho abre o Gerenciador de Tarefas?",
+      "opcoes": ["Ctrl+Shift+Esc", "Ctrl+Alt+Del", "Alt+Tab", "Win+R"],
+      "resposta": "Ctrl+Shift+Esc"
+    },
+    {
+      "pergunta": "Qual comando abre o prompt de comando?",
+      "opcoes": ["cmd", "terminal", "powershell", "run"],
+      "resposta": "cmd"
+    },
+    {
+      "pergunta": "Qual atalho minimiza todas as janelas?",
+      "opcoes": ["Win+D", "Alt+D", "Ctrl+D", "Shift+D"],
+      "resposta": "Win+D"
+    },
+    {
+      "pergunta": "Qual sistema de arquivos é padrão no Windows 10?",
+      "opcoes": ["NTFS", "FAT32", "exFAT", "EXT4"],
+      "resposta": "NTFS"
+    },
+    {
+      "pergunta": "Qual ferramenta gerencia atualizações do sistema?",
+      "opcoes": ["Windows Update", "Update Center", "System Update", "Patch Manager"],
+      "resposta": "Windows Update"
+    }
+  ],
+  "ubuntu": [
+    {
+      "pergunta": "Qual comando atualiza a lista de pacotes?",
+      "opcoes": ["sudo apt update", "apt-get refresh", "sudo update", "apt sync"],
+      "resposta": "sudo apt update"
+    },
+    {
+      "pergunta": "Qual ambiente gráfico é padrão no Ubuntu atual?",
+      "opcoes": ["GNOME", "KDE", "XFCE", "LXDE"],
+      "resposta": "GNOME"
+    },
+    {
+      "pergunta": "Qual comando instala pacotes?",
+      "opcoes": ["sudo apt install", "apt-get install", "sudo install", "pkg add"],
+      "resposta": "sudo apt install"
+    },
+    {
+      "pergunta": "Qual comando reinicia o sistema?",
+      "opcoes": ["sudo reboot", "restart", "reboot", "systemctl reboot"],
+      "resposta": "sudo reboot"
+    },
+    {
+      "pergunta": "Qual comando mostra o diretório atual?",
+      "opcoes": ["pwd", "whereami", "ls", "path"],
+      "resposta": "pwd"
+    }
+  ],
+  "debian": [
+    {
+      "pergunta": "O Debian é conhecido como base para qual distro popular?",
+      "opcoes": ["Ubuntu", "Fedora", "Arch", "CentOS"],
+      "resposta": "Ubuntu"
+    },
+    {
+      "pergunta": "Qual comando atualiza todos os pacotes instalados?",
+      "opcoes": ["sudo apt upgrade", "apt update", "apt-get refresh", "apt full-upgrade"],
+      "resposta": "sudo apt upgrade"
+    },
+    {
+      "pergunta": "Qual comando remove pacotes?",
+      "opcoes": ["sudo apt remove", "pkg del", "uninstall", "delete"],
+      "resposta": "sudo apt remove"
+    },
+    {
+      "pergunta": "Qual número da versão Debian conhecida como 'Buster'?",
+      "opcoes": ["10", "9", "11", "8"],
+      "resposta": "10"
+    },
+    {
+      "pergunta": "Qual arquivo lista os repositórios de pacotes?",
+      "opcoes": ["/etc/apt/sources.list", "/etc/pkg/repos.list", "/sources/pkgs", "/var/lib/apt/list"],
+      "resposta": "/etc/apt/sources.list"
+    }
+  ],
+  "kali linux": [
+    {
+      "pergunta": "Kali Linux é voltado para qual uso principal?",
+      "opcoes": ["Pentest", "Servidores", "Desenvolvimento", "Escritório"],
+      "resposta": "Pentest"
+    },
+    {
+      "pergunta": "Qual ferramenta é usada para testes de rede?",
+      "opcoes": ["Nmap", "Wireshark", "Metasploit", "Burp Suite"],
+      "resposta": "Nmap"
+    },
+    {
+      "pergunta": "Qual comando atualiza o Kali Linux?",
+      "opcoes": ["sudo apt update && sudo apt upgrade", "update kali", "kali upgrade", "apt refresh"],
+      "resposta": "sudo apt update && sudo apt upgrade"
+    },
+    {
+      "pergunta": "Qual empresa mantém o Kali Linux?",
+      "opcoes": ["Offensive Security", "Canonical", "Red Hat", "JetBrains"],
+      "resposta": "Offensive Security"
+    },
+    {
+      "pergunta": "Qual ambiente gráfico vem por padrão?",
+      "opcoes": ["XFCE", "GNOME", "KDE", "LXDE"],
+      "resposta": "XFCE"
+    }
+  ],
+  "swift": [
+    {
+      "pergunta": "Swift é mantida por qual empresa?",
+      "opcoes": ["Apple", "Google", "Microsoft", "JetBrains"],
+      "resposta": "Apple"
+    },
+    {
+      "pergunta": "Qual palavra-chave define uma constante?",
+      "opcoes": ["let", "const", "var", "final"],
+      "resposta": "let"
+    },
+    {
+      "pergunta": "Qual símbolo é usado para interpolação de strings?",
+      "opcoes": ["\\( )", "${ }", "#{ }", "%{ }"],
+      "resposta": "\\( )"
+    },
+    {
+      "pergunta": "Qual tipo representa números inteiros?",
+      "opcoes": ["Int", "Integer", "Number", "Whole"],
+      "resposta": "Int"
+    },
+    {
+      "pergunta": "Qual IDE oficial é usada para Swift?",
+      "opcoes": ["Xcode", "Swift Studio", "VS Code", "AppCode"],
+      "resposta": "Xcode"
+    }
+  ],
+  "macos": [
+    {
+      "pergunta": "Qual atalho abre o Spotlight?",
+      "opcoes": ["Command+Space", "Control+Space", "Option+Space", "Shift+Space"],
+      "resposta": "Command+Space"
+    },
+    {
+      "pergunta": "Qual sistema de arquivos é usado no macOS atual?",
+      "opcoes": ["APFS", "HFS+", "NTFS", "EXT4"],
+      "resposta": "APFS"
+    },
+    {
+      "pergunta": "Qual aplicativo gerencia configurações do sistema?",
+      "opcoes": ["Preferências do Sistema", "Configurações", "System Manager", "Control Center"],
+      "resposta": "Preferências do Sistema"
+    },
+    {
+      "pergunta": "Qual atalho captura a tela inteira?",
+      "opcoes": ["Command+Shift+3", "Command+Shift+4", "Command+3", "Shift+3"],
+      "resposta": "Command+Shift+3"
+    },
+    {
+      "pergunta": "Qual navegador é padrão no macOS?",
+      "opcoes": ["Safari", "Chrome", "Firefox", "Edge"],
+      "resposta": "Safari"
+    }
+  ], 
+  "android": [
+    {
+      "pergunta": "Qual linguagem é oficialmente recomendada para desenvolvimento Android?",
+      "opcoes": ["Kotlin", "Java", "C++", "Dart"],
+      "resposta": "Kotlin"
+    },
+    {
+      "pergunta": "Qual arquivo define a configuração principal de um app Android?",
+      "opcoes": ["AndroidManifest.xml", "config.xml", "app.gradle", "settings.json"],
+      "resposta": "AndroidManifest.xml"
+    },
+    {
+      "pergunta": "Qual IDE oficial para Android?",
+      "opcoes": ["Android Studio", "Eclipse", "VS Code", "NetBeans"],
+      "resposta": "Android Studio"
+    },
+    {
+      "pergunta": "Qual extensão de arquivo é usada para pacotes Android?",
+      "opcoes": [".apk", ".app", ".exe", ".jar"],
+      "resposta": ".apk"
+    },
+    {
+      "pergunta": "Qual layout organiza elementos em linha ou coluna?",
+      "opcoes": ["LinearLayout", "RelativeLayout", "ConstraintLayout", "FrameLayout"],
+      "resposta": "LinearLayout"
+    }
+  ],
+  "aws": [
+    {
+      "pergunta": "O que significa AWS?",
+      "opcoes": ["Amazon Web Services", "Advanced Web Solutions", "Amazon Work System", "Application Web Server"],
+      "resposta": "Amazon Web Services"
+    },
+    {
+      "pergunta": "Qual serviço da AWS é usado para hospedar aplicações serverless?",
+      "opcoes": ["AWS Lambda", "EC2", "S3", "RDS"],
+      "resposta": "AWS Lambda"
+    },
+    {
+      "pergunta": "Qual serviço da AWS é usado para armazenamento de objetos?",
+      "opcoes": ["S3", "EBS", "EFS", "Glacier"],
+      "resposta": "S3"
+    },
+    {
+      "pergunta": "Qual serviço AWS gerencia bancos de dados relacionais?",
+      "opcoes": ["RDS", "DynamoDB", "Aurora", "Redshift"],
+      "resposta": "RDS"
+    },
+    {
+      "pergunta": "Qual serviço AWS é usado para CDN?",
+      "opcoes": ["CloudFront", "Route53", "API Gateway", "Elastic Load Balancing"],
+      "resposta": "CloudFront"
+    }
+  ],
+  "netlify": [
+    {
+      "pergunta": "Netlify é popular para hospedar qual tipo de site?",
+      "opcoes": ["Sites estáticos", "Aplicativos desktop", "APIs REST", "Servidores de jogos"],
+      "resposta": "Sites estáticos"
+    },
+    {
+      "pergunta": "Qual recurso do Netlify permite implantações automáticas do Git?",
+      "opcoes": ["Continuous Deployment", "Auto Push", "Git Deploy", "Live Sync"],
+      "resposta": "Continuous Deployment"
+    },
+    {
+      "pergunta": "Netlify Functions é baseado em qual conceito?",
+      "opcoes": ["Serverless", "Containers", "VMs", "Microservices"],
+      "resposta": "Serverless"
+    },
+    {
+      "pergunta": "Qual comando do Netlify CLI inicia um servidor local?",
+      "opcoes": ["netlify dev", "netlify start", "ntl run", "ntl serve"],
+      "resposta": "netlify dev"
+    },
+    {
+      "pergunta": "Qual domínio padrão o Netlify usa para projetos gratuitos?",
+      "opcoes": [".netlify.app", ".netlify.com", ".netlify.io", ".netlify.dev"],
+      "resposta": ".netlify.app"
+    }
+  ],
+  "vercel": [
+    {
+      "pergunta": "Vercel foi criado pela empresa responsável por qual framework?",
+      "opcoes": ["Next.js", "Nuxt.js", "Gatsby", "Remix"],
+      "resposta": "Next.js"
+    },
+    {
+      "pergunta": "Qual conceito de backend é suportado no Vercel?",
+      "opcoes": ["Serverless Functions", "Dedicated Servers", "Bare Metal", "VMs"],
+      "resposta": "Serverless Functions"
+    },
+    {
+      "pergunta": "Qual comando do Vercel CLI implanta um projeto?",
+      "opcoes": ["vercel", "vercel deploy", "vc push", "vc run"],
+      "resposta": "vercel"
+    },
+    {
+      "pergunta": "Vercel é especialmente otimizado para qual tipo de site?",
+      "opcoes": ["Jamstack", "WordPress", "Desktop apps", "Blockchain"],
+      "resposta": "Jamstack"
+    },
+    {
+      "pergunta": "Qual domínio gratuito o Vercel fornece?",
+      "opcoes": [".vercel.app", ".vercel.io", ".vercel.dev", ".vercel.com"],
+      "resposta": ".vercel.app"
+    }
+  ],
+  "azure": [
+    {
+      "pergunta": "Azure é a plataforma em nuvem de qual empresa?",
+      "opcoes": ["Microsoft", "Google", "Amazon", "IBM"],
+      "resposta": "Microsoft"
+    },
+    {
+      "pergunta": "Qual serviço Azure é usado para hospedagem de aplicações web?",
+      "opcoes": ["App Service", "Blob Storage", "Azure SQL", "Functions"],
+      "resposta": "App Service"
+    },
+    {
+      "pergunta": "Qual serviço Azure é usado para bancos de dados SQL?",
+      "opcoes": ["Azure SQL Database", "Cosmos DB", "Table Storage", "PostgreSQL Azure"],
+      "resposta": "Azure SQL Database"
+    },
+    {
+      "pergunta": "Qual serviço Azure é para execução de código sem servidor?",
+      "opcoes": ["Azure Functions", "Azure Run", "Logic Apps", "WebJobs"],
+      "resposta": "Azure Functions"
+    },
+    {
+      "pergunta": "Qual ferramenta gerencia recursos no Azure via linha de comando?",
+      "opcoes": ["Azure CLI", "PowerShell", "Cloud Shell", "ARM"],
+      "resposta": "Azure CLI"
+    }
+  ],
+  "google cloud": [
+    {
+      "pergunta": "Google Cloud é mantido por qual empresa?",
+      "opcoes": ["Google", "Amazon", "Microsoft", "Oracle"],
+      "resposta": "Google"
+    },
+    {
+      "pergunta": "Qual serviço é usado para máquinas virtuais?",
+      "opcoes": ["Compute Engine", "App Engine", "Kubernetes Engine", "Cloud Run"],
+      "resposta": "Compute Engine"
+    },
+    {
+      "pergunta": "Qual serviço gerencia bancos de dados NoSQL no Google Cloud?",
+      "opcoes": ["Firestore", "Cloud SQL", "Bigtable", "Datastore"],
+      "resposta": "Firestore"
+    },
+    {
+      "pergunta": "Qual serviço é para orquestração de contêineres?",
+      "opcoes": ["Kubernetes Engine", "Cloud Functions", "Run Engine", "Cloud Docker"],
+      "resposta": "Kubernetes Engine"
+    },
+    {
+      "pergunta": "Qual ferramenta é usada para linha de comando do Google Cloud?",
+      "opcoes": ["gcloud", "gc-cli", "googlecli", "cloudctl"],
+      "resposta": "gcloud"
+    }
+  ],
+  "netjs": [
+    {
+      "pergunta": "NetJS é frequentemente confundido com qual framework popular?",
+      "opcoes": ["NestJS", "Next.js", "Nuxt.js", "Express.js"],
+      "resposta": "NestJS"
+    },
+    {
+      "pergunta": "Qual linguagem é base para o NetJS?",
+      "opcoes": ["JavaScript", "TypeScript", "Java", "PHP"],
+      "resposta": "TypeScript"
+    },
+    {
+      "pergunta": "Qual padrão arquitetural o NetJS/NestJS segue?",
+      "opcoes": ["MVC", "Microservices", "Clean Architecture", "Flux"],
+      "resposta": "MVC"
+    },
+    {
+      "pergunta": "O NetJS/NestJS é executado sobre qual runtime?",
+      "opcoes": ["Node.js", "Deno", "Bun", "JVM"],
+      "resposta": "Node.js"
+    },
+    {
+      "pergunta": "Qual comando cria um novo projeto no NetJS/NestJS?",
+      "opcoes": ["nest new", "netjs create", "net new", "nest create"],
+      "resposta": "nest new"
+    }
+  ],
+  "springboot": [
+    {
+      "pergunta": "Spring Boot é escrito em qual linguagem?",
+      "opcoes": ["Java", "Kotlin", "Groovy", "Scala"],
+      "resposta": "Java"
+    },
+    {
+      "pergunta": "Qual anotação inicializa uma aplicação Spring Boot?",
+      "opcoes": ["@SpringBootApplication", "@EnableSpring", "@SpringApp", "@BootApp"],
+      "resposta": "@SpringBootApplication"
+    },
+    {
+      "pergunta": "Qual ferramenta gerencia dependências no Spring Boot?",
+      "opcoes": ["Maven/Gradle", "NPM", "Composer", "Pip"],
+      "resposta": "Maven/Gradle"
+    },
+    {
+      "pergunta": "Qual comando inicia uma aplicação Spring Boot?",
+      "opcoes": ["mvn spring-boot:run", "java -jar app.jar", "spring start", "boot run"],
+      "resposta": "mvn spring-boot:run"
+    },
+    {
+      "pergunta": "Qual servidor é embutido por padrão no Spring Boot?",
+      "opcoes": ["Tomcat", "Jetty", "Undertow", "GlassFish"],
+      "resposta": "Tomcat"
+    }
+  ],"git": [
+    {
+      "pergunta": "Qual comando inicializa um repositório Git?",
+      "opcoes": ["git init", "git start", "git create", "git new"],
+      "resposta": "git init"
+    },
+    {
+      "pergunta": "Qual comando adiciona arquivos para o próximo commit?",
+      "opcoes": ["git add", "git stage", "git commit", "git push"],
+      "resposta": "git add"
+    },
+    {
+      "pergunta": "Qual comando cria um commit?",
+      "opcoes": ["git commit -m", "git save", "git record", "git update"],
+      "resposta": "git commit -m"
+    },
+    {
+      "pergunta": "Qual comando envia mudanças para o repositório remoto?",
+      "opcoes": ["git push", "git upload", "git send", "git deploy"],
+      "resposta": "git push"
+    },
+    {
+      "pergunta": "Qual comando traz mudanças do repositório remoto?",
+      "opcoes": ["git pull", "git fetch", "git get", "git download"],
+      "resposta": "git pull"
+    }
+  ],
+  "github": [
+    {
+      "pergunta": "Qual recurso do GitHub permite revisão de código antes do merge?",
+      "opcoes": ["Pull Request", "Issue", "Commit", "Branch"],
+      "resposta": "Pull Request"
+    },
+    {
+      "pergunta": "Qual arquivo configura um workflow GitHub Actions?",
+      "opcoes": [".github/workflows/*.yml", ".github/actions.yml", "workflow.yml", "github.yml"],
+      "resposta": ".github/workflows/*.yml"
+    },
+    {
+      "pergunta": "Qual funcionalidade do GitHub ajuda a rastrear tarefas e bugs?",
+      "opcoes": ["Issues", "Projects", "Discussions", "Actions"],
+      "resposta": "Issues"
+    },
+    {
+      "pergunta": "Qual comando clona um repositório GitHub?",
+      "opcoes": ["git clone", "git copy", "git download", "git fork"],
+      "resposta": "git clone"
+    },
+    {
+      "pergunta": "Qual termo define uma cópia independente de um repositório?",
+      "opcoes": ["Fork", "Branch", "Clone", "Commit"],
+      "resposta": "Fork"
+    }
+  ],
+  "docker": [
+    {
+      "pergunta": "Qual comando cria uma imagem Docker a partir de um Dockerfile?",
+      "opcoes": ["docker build", "docker create", "docker make", "docker run"],
+      "resposta": "docker build"
+    },
+    {
+      "pergunta": "Qual comando executa um container Docker?",
+      "opcoes": ["docker run", "docker start", "docker execute", "docker launch"],
+      "resposta": "docker run"
+    },
+    {
+      "pergunta": "Qual arquivo define as instruções para criar uma imagem Docker?",
+      "opcoes": ["Dockerfile", "docker.config", "docker-compose.yml", "container.yaml"],
+      "resposta": "Dockerfile"
+    },
+    {
+      "pergunta": "Qual comando lista os containers em execução?",
+      "opcoes": ["docker ps", "docker list", "docker containers", "docker running"],
+      "resposta": "docker ps"
+    },
+    {
+      "pergunta": "Qual comando para um container em execução?",
+      "opcoes": ["docker stop", "docker kill", "docker pause", "docker end"],
+      "resposta": "docker stop"
+    }
+  ],
+  "postman": [
+    {
+      "pergunta": "Postman é usado principalmente para testar APIs do tipo?",
+      "opcoes": ["REST", "SOAP", "FTP", "SMTP"],
+      "resposta": "REST"
+    },
+    {
+      "pergunta": "Qual método HTTP é usado para obter dados?",
+      "opcoes": ["GET", "POST", "PUT", "DELETE"],
+      "resposta": "GET"
+    },
+    {
+      "pergunta": "Qual método HTTP é usado para criar novos recursos?",
+      "opcoes": ["POST", "GET", "PUT", "PATCH"],
+      "resposta": "POST"
+    },
+    {
+      "pergunta": "Qual recurso do Postman permite organizar múltiplas requisições?",
+      "opcoes": ["Collections", "Workspaces", "Environments", "Folders"],
+      "resposta": "Collections"
+    },
+    {
+      "pergunta": "Qual recurso permite variar valores em requisições no Postman?",
+      "opcoes": ["Environments", "Collections", "Variables", "Globals"],
+      "resposta": "Environments"
+    }
+  ],
+  "figma": [
+    {
+      "pergunta": "Figma é uma ferramenta para design de?",
+      "opcoes": ["Interfaces", "Vídeos", "Modelagem 3D", "Animações 2D"],
+      "resposta": "Interfaces"
+    },
+    {
+      "pergunta": "Qual recurso do Figma permite colaboração em tempo real?",
+      "opcoes": ["Multi-user editing", "Live Share", "Team Sync", "Co-editing"],
+      "resposta": "Multi-user editing"
+    },
+    {
+      "pergunta": "Qual arquivo do Figma é usado para prototipagem interativa?",
+      "opcoes": ["Prototype", "Design", "Mockup", "Flow"],
+      "resposta": "Prototype"
+    },
+    {
+      "pergunta": "Qual painel no Figma organiza camadas e objetos?",
+      "opcoes": ["Layers", "Assets", "Properties", "Navigator"],
+      "resposta": "Layers"
+    },
+    {
+      "pergunta": "Qual atalho no Figma cria uma nova forma retangular?",
+      "opcoes": ["R", "L", "F", "S"],
+      "resposta": "R"
+    }
   ]
 }
