@@ -1,24 +1,4 @@
-const perguntas = {
-  html5: [
-    {
-      pergunta: "Qual elemento define um bloco de navegação?",
-      opcoes: ["<nav>", "<div>", "<section>", "<header>"],
-      resposta: "<nav>",
-    },
-    {
-      pergunta: "Qual elemento é usado para vídeos?",
-      opcoes: ["<media>", "<video>", "<movie>", "<stream>"],
-      resposta: "<video>",
-    },
-  ],
-  css3: [
-    {
-      pergunta: "Qual propriedade define a cor do fundo?",
-      opcoes: ["color", "background-color", "fill", "bg-color"],
-      resposta: "background-color",
-    }
-  ]
-};
+
 
 // Obtém tema pela URL (ex: ?tema=html5)
 const urlParams = new URLSearchParams(window.location.search);

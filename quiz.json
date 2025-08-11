@@ -1,0 +1,218 @@
+{
+  "html5": [
+    {
+      "pergunta": "Qual elemento define um bloco de navegação?",
+      "opcoes": ["<nav>", "<div>", "<section>", "<header>"],
+      "resposta": "<nav>"
+    },
+    {
+      "pergunta": "Qual elemento é usado para vídeos?",
+      "opcoes": ["<media>", "<video>", "<movie>", "<stream>"],
+      "resposta": "<video>"
+    },
+    {
+      "pergunta": "Qual atributo do elemento <input> define um campo obrigatório?",
+      "opcoes": ["required", "placeholder", "mandatory", "validate"],
+      "resposta": "required"
+    },
+    {
+      "pergunta": "Qual elemento semântico é usado para rodapé?",
+      "opcoes": ["<footer>", "<bottom>", "<end>", "<section>"],
+      "resposta": "<footer>"
+    },
+    {
+      "pergunta": "Qual elemento é usado para agrupar conteúdo independente e autocontido?",
+      "opcoes": ["<article>", "<section>", "<aside>", "<div>"],
+      "resposta": "<article>"
+    }
+  ],
+  "css3": [
+    {
+      "pergunta": "Qual propriedade define a cor de fundo de um elemento?",
+      "opcoes": ["background-color", "color", "bgcolor", "fill"],
+      "resposta": "background-color"
+    },
+    {
+      "pergunta": "Qual propriedade controla o tamanho da fonte?",
+      "opcoes": ["font-size", "text-size", "size", "font-style"],
+      "resposta": "font-size"
+    },
+    {
+      "pergunta": "Qual valor de 'position' fixa um elemento em relação à janela de visualização?",
+      "opcoes": ["fixed", "absolute", "relative", "sticky"],
+      "resposta": "fixed"
+    },
+    {
+      "pergunta": "Qual unidade é relativa ao tamanho da fonte do elemento?",
+      "opcoes": ["em", "px", "%", "vh"],
+      "resposta": "em"
+    },
+    {
+      "pergunta": "Qual propriedade define o espaçamento interno de um elemento?",
+      "opcoes": ["padding", "margin", "gap", "space"],
+      "resposta": "padding"
+    }
+  ],
+  "javascript": [
+    {
+      "pergunta": "Qual palavra-chave é usada para declarar uma constante?",
+      "opcoes": ["const", "let", "var", "constant"],
+      "resposta": "const"
+    },
+    {
+      "pergunta": "Qual método converte uma string para número inteiro?",
+      "opcoes": ["parseInt()", "Number()", "parseFloat()", "toInt()"],
+      "resposta": "parseInt()"
+    },
+    {
+      "pergunta": "Qual operador é usado para comparação estrita de valor e tipo?",
+      "opcoes": ["===", "==", "=", "!=="],
+      "resposta": "==="
+    },
+    {
+      "pergunta": "Qual estrutura de dados armazena pares chave-valor?",
+      "opcoes": ["Object", "Array", "Set", "Map"],
+      "resposta": "Object"
+    },
+    {
+      "pergunta": "Qual função é usada para executar um código após um atraso?",
+      "opcoes": ["setTimeout()", "delay()", "wait()", "setInterval()"],
+      "resposta": "setTimeout()"
+    }
+  ],
+  "typescript": [
+    {
+      "pergunta": "Qual tipo é usado para representar valores verdadeiros ou falsos?",
+      "opcoes": ["boolean", "bool", "trueFalse", "bit"],
+      "resposta": "boolean"
+    },
+    {
+      "pergunta": "Como declarar um array de números em TypeScript?",
+      "opcoes": ["number[]", "array<number>", "numbers[]", "int[]"],
+      "resposta": "number[]"
+    },
+    {
+      "pergunta": "Qual palavra-chave é usada para criar um tipo personalizado?",
+      "opcoes": ["type", "interface", "custom", "alias"],
+      "resposta": "type"
+    },
+    {
+      "pergunta": "Qual recurso permite definir contratos para objetos?",
+      "opcoes": ["interface", "contract", "schema", "blueprint"],
+      "resposta": "interface"
+    },
+    {
+      "pergunta": "Qual comando compila TypeScript para JavaScript?",
+      "opcoes": ["tsc", "ts-compile", "tsbuild", "compile-ts"],
+      "resposta": "tsc"
+    }
+  ],
+  "tailwindCss": [
+    {
+      "pergunta": "Qual classe define margem superior de 4 unidades?",
+      "opcoes": ["mt-4", "margin-top-4", "m-t4", "top-4"],
+      "resposta": "mt-4"
+    },
+    {
+      "pergunta": "Qual classe define texto centralizado?",
+      "opcoes": ["text-center", "center-text", "txt-center", "align-center"],
+      "resposta": "text-center"
+    },
+    {
+      "pergunta": "Qual classe define cor de fundo azul?",
+      "opcoes": ["bg-blue-500", "background-blue", "bgblue", "blue-bg"],
+      "resposta": "bg-blue-500"
+    },
+    {
+      "pergunta": "Qual classe define fonte em negrito?",
+      "opcoes": ["font-bold", "text-bold", "bold", "fw-bold"],
+      "resposta": "font-bold"
+    },
+    {
+      "pergunta": "Qual classe define espaçamento interno de 2 unidades?",
+      "opcoes": ["p-2", "padding-2", "pad-2", "pd-2"],
+      "resposta": "p-2"
+    }
+  ],
+  "react": [
+    {
+      "pergunta": "Qual hook é usado para estado em componentes funcionais?",
+      "opcoes": ["useState", "useEffect", "useRef", "useContext"],
+      "resposta": "useState"
+    },
+    {
+      "pergunta": "Qual hook executa efeitos colaterais?",
+      "opcoes": ["useEffect", "useState", "useReducer", "useMemo"],
+      "resposta": "useEffect"
+    },
+    {
+      "pergunta": "Como se chama o objeto que representa a árvore de elementos do React?",
+      "opcoes": ["Virtual DOM", "Real DOM", "Shadow DOM", "Fiber DOM"],
+      "resposta": "Virtual DOM"
+    },
+    {
+      "pergunta": "Qual extensão de arquivo é comum para componentes React com JSX?",
+      "opcoes": [".jsx", ".react", ".component", ".js"],
+      "resposta": ".jsx"
+    },
+    {
+      "pergunta": "Qual comando cria um novo projeto React com Create React App?",
+      "opcoes": ["npx create-react-app", "npm new react", "create-react", "npx react-new"],
+      "resposta": "npx create-react-app"
+    }
+  ],
+  "angular": [
+    {
+      "pergunta": "Qual comando cria um novo projeto Angular?",
+      "opcoes": ["ng new", "npm new angular", "create-angular", "npx angular-new"],
+      "resposta": "ng new"
+    },
+    {
+      "pergunta": "Qual arquivo define o módulo raiz de uma aplicação Angular?",
+      "opcoes": ["app.module.ts", "main.ts", "index.ts", "root.module.ts"],
+      "resposta": "app.module.ts"
+    },
+    {
+      "pergunta": "Qual decorador é usado para definir um componente?",
+      "opcoes": ["@Component", "@NgModule", "@Injectable", "@Directive"],
+      "resposta": "@Component"
+    },
+    {
+      "pergunta": "Qual comando serve a aplicação localmente?",
+      "opcoes": ["ng serve", "npm start", "ng run", "angular start"],
+      "resposta": "ng serve"
+    },
+    {
+      "pergunta": "Qual linguagem é usada principalmente para desenvolver no Angular?",
+      "opcoes": ["TypeScript", "JavaScript", "Dart", "Python"],
+      "resposta": "TypeScript"
+    }
+  ],
+  "bootstrap": [
+    {
+      "pergunta": "Qual classe aplica um botão com estilo primário?",
+      "opcoes": ["btn btn-primary", "button-primary", "btn-primary", "btn-main"],
+      "resposta": "btn btn-primary"
+    },
+    {
+      "pergunta": "Qual classe centraliza texto?",
+      "opcoes": ["text-center", "center-text", "align-center", "txt-center"],
+      "resposta": "text-center"
+    },
+    {
+      "pergunta": "Qual classe cria uma grade responsiva?",
+      "opcoes": ["row", "grid", "flex-grid", "container-row"],
+      "resposta": "row"
+    },
+    {
+      "pergunta": "Qual classe cria um container com largura fixa?",
+      "opcoes": ["container", "container-fixed", "container-fluid", "fixed-container"],
+      "resposta": "container"
+    },
+    {
+      "pergunta": "Qual classe aplica espaçamento interno de 3 unidades?",
+      "opcoes": ["p-3", "padding-3", "pad-3", "pd-3"],
+      "resposta": "p-3"
+    }
+  ]
+}

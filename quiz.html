@@ -21,7 +21,27 @@
     <h2 id="quiz-title">Quiz sobre <span id="tecnologia">HTML5</span></h2>
 
     <div id="quiz-box">
-      <!-- Questões são inseridas via JavaScript -->
+      <!-- Questões são inseridas via JavaScript -->const perguntas = {
+  html5: [
+    {
+      pergunta: "Qual elemento define um bloco de navegação?",
+      opcoes: ["<nav>", "<div>", "<section>", "<header>"],
+      resposta: "<nav>",
+    },
+    {
+      pergunta: "Qual elemento é usado para vídeos?",
+      opcoes: ["<media>", "<video>", "<movie>", "<stream>"],
+      resposta: "<video>",
+    },
+  ],
+  css3: [
+    {
+      pergunta: "Qual propriedade define a cor do fundo?",
+      opcoes: ["color", "background-color", "fill", "bg-color"],
+      resposta: "background-color",
+    }
+  ]
+};
     </div>
 
     <button id="submit-quiz">Enviar Respostas</button>
