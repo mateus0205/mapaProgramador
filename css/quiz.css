@@ -15,8 +15,8 @@ body {
 }
 
 .voltarBtn {
-  background-color: #2563eb;
-  color: white;
+  background-color: #fc0;
+  color: rgb(0, 0, 0);
   padding: 8px 14px;
   border-radius: 6px;
   font-weight: 500;
@@ -147,6 +147,26 @@ footer {
 
 .footer-links a:hover {
   color: #00ff00;
+}
+#quiz-result {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  display: none; /* escondido até mostrar resultado */
+}
+
+.result-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.result-error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
 }
 
 @keyframes fadeIn {
